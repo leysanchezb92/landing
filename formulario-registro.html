@@ -3,60 +3,117 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Registro – deatleta.dev</title>
+<meta name="theme-color" content="#1a6b45"/>
+ 
+<!-- SEO -->
+<title>Registro – Únete a deatleta.dev</title>
+<meta name="description" content="Regístrate gratis en deatleta.dev. Cinco preguntas para personalizar tu experiencia como ex-atleta que aprende a programar. Menos de 2 minutos."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://deatleta.dev/formulario-registro.html"/>
+ 
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://deatleta.dev/formulario-registro.html"/>
+<meta property="og:title" content="Únete a deatleta.dev – Gratis, sin spam, en 2 minutos"/>
+<meta property="og:description" content="Cinco preguntas para personalizar tu camino de ex-atleta a desarrolladora frontend."/>
+<meta property="og:locale" content="es_CO"/>
+<meta property="og:site_name" content="deatleta.dev"/>
+ 
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://deatleta.dev/formulario-registro.html",
+  "url": "https://deatleta.dev/formulario-registro.html",
+  "name": "Registro – Únete a deatleta.dev",
+  "description": "Formulario de registro para el newsletter deatleta.dev para ex-atletas que aprenden programación.",
+  "inLanguage": "es",
+  "isPartOf": {"@id": "https://deatleta.dev/#website"},
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://deatleta.dev/"},
+      {"@type": "ListItem", "position": 2, "name": "Registro", "item": "https://deatleta.dev/formulario-registro.html"}
+    ]
+  }
+}
+</script>
+ 
 <link rel="stylesheet" href="styles.css"/>
 </head>
 <body class="form-page">
  
-<div class="form-card">
+<a href="#form-card" class="skip-link">Saltar al formulario</a>
+ 
+<main>
+<div class="form-card" id="form-card">
  
   <!-- HEADER -->
-  <div class="form-header">
-    <div class="eyebrow">deatleta.dev · Registro</div>
-    <h2>Cuéntame<br/>tu <em>historia</em></h2>
+  <header class="form-header">
+    <p class="eyebrow" aria-hidden="true">deatleta.dev · Registro</p>
+    <h1>Cuéntame<br/>tu <em>historia</em></h1>
     <p>Cinco preguntas para entender de dónde vienes y cómo acompañarte mejor. Menos de 2 minutos.</p>
-  </div>
+  </header>
  
   <!-- PROGRESS DOTS -->
-  <div class="progress-row" id="progressRow">
-    <div class="prog-dot active" id="d1"></div>
-    <div class="prog-dot" id="d2"></div>
-    <div class="prog-dot" id="d3"></div>
-    <div class="prog-dot" id="d4"></div>
-    <div class="prog-dot" id="d5"></div>
+  <div class="progress-row" id="progressRow" role="status" aria-live="polite" aria-label="Progreso del formulario">
+    <span class="prog-dot active" id="d1" aria-hidden="true"></span>
+    <span class="prog-dot" id="d2" aria-hidden="true"></span>
+    <span class="prog-dot" id="d3" aria-hidden="true"></span>
+    <span class="prog-dot" id="d4" aria-hidden="true"></span>
+    <span class="prog-dot" id="d5" aria-hidden="true"></span>
     <span class="prog-label" id="progLabel">Pregunta 1 de 5</span>
   </div>
  
   <!-- FORM -->
-  <form id="mainForm" onsubmit="handleFormSubmit(event)" novalidate>
+  <form id="mainForm" onsubmit="handleFormSubmit(event)" novalidate aria-label="Formulario de registro">
   <div class="form-body">
  
     <!-- P1: Nombre + Email -->
     <div class="q-block">
-      <label class="q-label">¿Cómo te llamas y cuál es tu email?</label>
-      <p class="q-help">Solo para saber con quién hablo y poder escribirte cuando tenga algo para ti.</p>
+      <p class="q-label" id="q1-titulo">¿Cómo te llamas y cuál es tu email?</p>
+      <p class="q-help" id="q1-ayuda">Solo para saber con quién hablo y poder escribirte cuando tenga algo para ti.</p>
       <div class="input-row">
-        <input class="q-input" type="text" id="f-nombre" placeholder="Tu nombre"/>
-        <input class="q-input" type="email" id="f-email" placeholder="tu@email.com"/>
+        <div>
+          <label for="f-nombre" class="visually-hidden">Tu nombre</label>
+          <input class="q-input" type="text" id="f-nombre"
+            placeholder="Tu nombre"
+            autocomplete="given-name"
+            aria-describedby="q1-ayuda"
+            aria-required="true"/>
+        </div>
+        <div>
+          <label for="f-email" class="visually-hidden">Tu dirección de email</label>
+          <input class="q-input" type="email" id="f-email"
+            placeholder="tu@email.com"
+            autocomplete="email"
+            aria-describedby="q1-ayuda"
+            aria-required="true"/>
+        </div>
       </div>
     </div>
  
-    <div class="q-divider"></div>
+    <div class="q-divider" role="separator"></div>
  
     <!-- P2: Deporte -->
     <div class="q-block">
-      <label class="q-label">¿Qué deporte practicaste?</label>
-      <p class="q-help">No importa si fue hace años o si nunca llegaste a la élite. Tu historia deportiva es el punto de partida de todo lo que hacemos aquí.</p>
-      <input class="q-input" type="text" id="f-deporte" placeholder="Fútbol, natación, atletismo, tenis..."/>
+      <label for="f-deporte" class="q-label">¿Qué deporte practicaste?</label>
+      <p class="q-help" id="q2-ayuda">No importa si fue hace años o si nunca llegaste a la élite. Tu historia deportiva es el punto de partida de todo lo que hacemos aquí.</p>
+      <input class="q-input" type="text" id="f-deporte"
+        placeholder="Fútbol, natación, atletismo, tenis..."
+        autocomplete="off"
+        aria-describedby="q2-ayuda"
+        aria-required="true"/>
     </div>
  
-    <div class="q-divider"></div>
+    <div class="q-divider" role="separator"></div>
  
     <!-- P3: Nivel tech -->
-    <div class="q-block">
-      <label class="q-label">¿Cuánto sabes de programación hoy?</label>
-      <p class="q-help">Sin presión. No hay respuesta incorrecta. Solo quiero saber desde dónde empezamos para no enviarte cosas que ya sabes — ni las que todavía no tienen sentido.</p>
-      <div class="choices">
+    <fieldset class="q-block">
+      <legend class="q-label">¿Cuánto sabes de programación hoy?</legend>
+      <p class="q-help" id="q3-ayuda">Sin presión. No hay respuesta incorrecta. Solo quiero saber desde dónde empezamos para no enviarte cosas que ya sabes — ni las que todavía no tienen sentido.</p>
+      <div class="choices" role="group" aria-describedby="q3-ayuda">
         <label class="choice">
           <input type="radio" name="f-nivel" value="cero"/>
           <div class="choice-text"><strong>Nada todavía</strong><span>Nunca he escrito una línea de código</span></div>
@@ -70,15 +127,15 @@
           <div class="choice-text"><strong>Tengo algo básico</strong><span>HTML, CSS o algo de JavaScript</span></div>
         </label>
       </div>
-    </div>
+    </fieldset>
  
-    <div class="q-divider"></div>
+    <div class="q-divider" role="separator"></div>
  
     <!-- P4: Necesidad + condicional sesión -->
-    <div class="q-block">
-      <label class="q-label">¿Qué necesitas ahora mismo?</label>
-      <p class="q-help">Esto me ayuda a entender qué tipo de acompañamiento tiene más sentido para ti desde el primer día.</p>
-      <div class="choices">
+    <fieldset class="q-block">
+      <legend class="q-label">¿Qué necesitas ahora mismo?</legend>
+      <p class="q-help" id="q4-ayuda">Esto me ayuda a entender qué tipo de acompañamiento tiene más sentido para ti desde el primer día.</p>
+      <div class="choices" role="group" aria-describedby="q4-ayuda">
         <label class="choice">
           <input type="radio" name="f-necesidad" value="info" onchange="toggleScheduler(false)"/>
           <div class="choice-text"><strong>Quiero entender si esto es para mí</strong><span>Me interesa pero todavía tengo dudas</span></div>
@@ -96,25 +153,30 @@
           <div class="choice-text"><strong>Aún no lo tengo claro</strong><span>Solo quiero explorar por ahora</span></div>
         </label>
       </div>
-      <div class="conditional" id="f-schedulerBlock">
-        <strong>¿Cuándo tienes disponibilidad?</strong>
+      <div class="conditional" id="f-schedulerBlock" aria-live="polite" aria-atomic="false">
+        <strong id="scheduler-title">¿Cuándo tienes disponibilidad?</strong>
         <span style="font-size:0.76rem;color:var(--muted);">Elige la que más te funcione y coordino algo ese día.</span>
-        <div class="time-chips">
-          <div class="chip" onclick="selectChip(this)">Mañanas</div>
-          <div class="chip" onclick="selectChip(this)">Tardes</div>
-          <div class="chip" onclick="selectChip(this)">Noches</div>
-          <div class="chip" onclick="selectChip(this)">Fines de semana</div>
+        <div class="time-chips" role="group" aria-labelledby="scheduler-title">
+          <button type="button" class="chip" onclick="selectChip(this)" aria-pressed="false">Mañanas</button>
+          <button type="button" class="chip" onclick="selectChip(this)" aria-pressed="false">Tardes</button>
+          <button type="button" class="chip" onclick="selectChip(this)" aria-pressed="false">Noches</button>
+          <button type="button" class="chip" onclick="selectChip(this)" aria-pressed="false">Fines de semana</button>
         </div>
       </div>
-    </div>
+    </fieldset>
  
-    <div class="q-divider"></div>
+    <div class="q-divider" role="separator"></div>
  
     <!-- P5: Contexto libre -->
     <div class="q-block">
-      <label class="q-label">¿Hay algo más que quieras contarme? <span style="font-weight:400;color:#9ca3af;">(opcional)</span></label>
-      <p class="q-help">Tu situación, tu historia, lo que sea. Cuanto más me cuentes, mejor puedo acompañarte. Y sí, lo leo todo.</p>
-      <textarea class="q-textarea" id="f-contexto" placeholder="Ej: Dejé el fútbol hace dos años por una lesión y todavía no sé muy bien qué sigue..."></textarea>
+      <label for="f-contexto" class="q-label">
+        ¿Hay algo más que quieras contarme?
+        <span style="font-weight:400;color:#9ca3af;"> (opcional)</span>
+      </label>
+      <p class="q-help" id="q5-ayuda">Tu situación, tu historia, lo que sea. Cuanto más me cuentes, mejor puedo acompañarte. Y sí, lo leo todo.</p>
+      <textarea class="q-textarea" id="f-contexto"
+        placeholder="Ej: Dejé el fútbol hace dos años por una lesión y todavía no sé muy bien qué sigue..."
+        aria-describedby="q5-ayuda"></textarea>
     </div>
  
   </div>
@@ -130,21 +192,22 @@
   </form>
  
   <!-- CONFIRMATION -->
-  <div class="form-confirmation" id="f-confirmation">
-    <div class="conf-icon-new">✦</div>
+  <div class="form-confirmation" id="f-confirmation" role="status" aria-live="polite" aria-atomic="true">
+    <div class="conf-icon-new" aria-hidden="true">✦</div>
     <h2>¡Bienvenida, <span id="f-confName">atleta</span>!</h2>
     <p>Tu registro llegó. Esto es lo que pasa ahora:</p>
     <div class="next-steps-block">
-      <div class="ns-title-f">Próximos pasos</div>
-      <div class="ns-item-f"><div class="ns-dot-f"></div>En las próximas horas te llega un email con tu primer recurso — personalizado según tu historia deportiva.</div>
-      <div class="ns-item-f" id="f-nsSession" style="display:none;"><div class="ns-dot-f"></div>Como pediste una sesión, te escribo para coordinar el horario que marcaste.</div>
-      <div class="ns-item-f"><div class="ns-dot-f"></div>Cada semana recibirás un artículo corto que conecta lo que ya sabes del deporte con aprender a programar.</div>
-      <div class="ns-item-f"><div class="ns-dot-f"></div>Cuando estés lista para el siguiente paso, yo estoy aquí.</div>
+      <p class="ns-title-f">Próximos pasos</p>
+      <div class="ns-item-f"><div class="ns-dot-f" aria-hidden="true"></div>En las próximas horas te llega un email con tu primer recurso — personalizado según tu historia deportiva.</div>
+      <div class="ns-item-f" id="f-nsSession" style="display:none;"><div class="ns-dot-f" aria-hidden="true"></div>Como pediste una sesión, te escribo para coordinar el horario que marcaste.</div>
+      <div class="ns-item-f"><div class="ns-dot-f" aria-hidden="true"></div>Cada semana recibirás un artículo corto que conecta lo que ya sabes del deporte con aprender a programar.</div>
+      <div class="ns-item-f"><div class="ns-dot-f" aria-hidden="true"></div>Cuando estés lista para el siguiente paso, yo estoy aquí.</div>
     </div>
-    <div class="conf-tag-f">No empiezas desde cero. Empiezas desde el deporte. ✦</div>
+    <p class="conf-tag-f">No empiezas desde cero. Empiezas desde el deporte. ✦</p>
   </div>
  
 </div>
+</main>
  
 <script src="scripts.js"></script>
 </body>
