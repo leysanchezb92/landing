@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Registro – deatleta.dev</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="form-page">
+ 
+<div class="form-card">
+ 
+  <!-- HEADER -->
+  <div class="form-header">
+    <div class="eyebrow">deatleta.dev · Registro</div>
+    <h2>Cuéntame<br/>tu <em>historia</em></h2>
+    <p>Cinco preguntas para entender de dónde vienes y cómo acompañarte mejor. Menos de 2 minutos.</p>
+  </div>
+ 
+  <!-- PROGRESS DOTS -->
+  <div class="progress-row" id="progressRow">
+    <div class="prog-dot active" id="d1"></div>
+    <div class="prog-dot" id="d2"></div>
+    <div class="prog-dot" id="d3"></div>
+    <div class="prog-dot" id="d4"></div>
+    <div class="prog-dot" id="d5"></div>
+    <span class="prog-label" id="progLabel">Pregunta 1 de 5</span>
+  </div>
+ 
+  <!-- FORM -->
+  <form id="mainForm" onsubmit="handleFormSubmit(event)" novalidate>
+  <div class="form-body">
+ 
+    <!-- P1: Nombre + Email -->
+    <div class="q-block">
+      <label class="q-label">¿Cómo te llamas y cuál es tu email?</label>
+      <p class="q-help">Solo para saber con quién hablo y poder escribirte cuando tenga algo para ti.</p>
+      <div class="input-row">
+        <input class="q-input" type="text" id="f-nombre" placeholder="Tu nombre"/>
+        <input class="q-input" type="email" id="f-email" placeholder="tu@email.com"/>
+      </div>
+    </div>
+ 
+    <div class="q-divider"></div>
+ 
+    <!-- P2: Deporte -->
+    <div class="q-block">
+      <label class="q-label">¿Qué deporte practicaste?</label>
+      <p class="q-help">No importa si fue hace años o si nunca llegaste a la élite. Tu historia deportiva es el punto de partida de todo lo que hacemos aquí.</p>
+      <input class="q-input" type="text" id="f-deporte" placeholder="Fútbol, natación, atletismo, tenis..."/>
+    </div>
+ 
+    <div class="q-divider"></div>
+ 
+    <!-- P3: Nivel tech -->
+    <div class="q-block">
+      <label class="q-label">¿Cuánto sabes de programación hoy?</label>
+      <p class="q-help">Sin presión. No hay respuesta incorrecta. Solo quiero saber desde dónde empezamos para no enviarte cosas que ya sabes — ni las que todavía no tienen sentido.</p>
+      <div class="choices">
+        <label class="choice">
+          <input type="radio" name="f-nivel" value="cero"/>
+          <div class="choice-text"><strong>Nada todavía</strong><span>Nunca he escrito una línea de código</span></div>
+        </label>
+        <label class="choice">
+          <input type="radio" name="f-nivel" value="intente"/>
+          <div class="choice-text"><strong>Intenté aprender y lo dejé</strong><span>Empecé un curso o tutorial pero no lo terminé</span></div>
+        </label>
+        <label class="choice">
+          <input type="radio" name="f-nivel" value="basico"/>
+          <div class="choice-text"><strong>Tengo algo básico</strong><span>HTML, CSS o algo de JavaScript</span></div>
+        </label>
+      </div>
+    </div>
+ 
+    <div class="q-divider"></div>
+ 
+    <!-- P4: Necesidad + condicional sesión -->
+    <div class="q-block">
+      <label class="q-label">¿Qué necesitas ahora mismo?</label>
+      <p class="q-help">Esto me ayuda a entender qué tipo de acompañamiento tiene más sentido para ti desde el primer día.</p>
+      <div class="choices">
+        <label class="choice">
+          <input type="radio" name="f-necesidad" value="info" onchange="toggleScheduler(false)"/>
+          <div class="choice-text"><strong>Quiero entender si esto es para mí</strong><span>Me interesa pero todavía tengo dudas</span></div>
+        </label>
+        <label class="choice">
+          <input type="radio" name="f-necesidad" value="aprender" onchange="toggleScheduler(false)"/>
+          <div class="choice-text"><strong>Quiero empezar a aprender frontend</strong><span>Ya decidí y quiero una ruta concreta</span></div>
+        </label>
+        <label class="choice">
+          <input type="radio" name="f-necesidad" value="sesion" onchange="toggleScheduler(true)"/>
+          <div class="choice-text"><strong>Quiero hablar contigo directamente</strong><span>Prefiero una sesión de orientación antes de empezar</span></div>
+        </label>
+        <label class="choice">
+          <input type="radio" name="f-necesidad" value="claro" onchange="toggleScheduler(false)"/>
+          <div class="choice-text"><strong>Aún no lo tengo claro</strong><span>Solo quiero explorar por ahora</span></div>
+        </label>
+      </div>
+      <div class="conditional" id="f-schedulerBlock">
+        <strong>¿Cuándo tienes disponibilidad?</strong>
+        <span style="font-size:0.76rem;color:var(--muted);">Elige la que más te funcione y coordino algo ese día.</span>
+        <div class="time-chips">
+          <div class="chip" onclick="selectChip(this)">Mañanas</div>
+          <div class="chip" onclick="selectChip(this)">Tardes</div>
+          <div class="chip" onclick="selectChip(this)">Noches</div>
+          <div class="chip" onclick="selectChip(this)">Fines de semana</div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="q-divider"></div>
+ 
+    <!-- P5: Contexto libre -->
+    <div class="q-block">
+      <label class="q-label">¿Hay algo más que quieras contarme? <span style="font-weight:400;color:#9ca3af;">(opcional)</span></label>
+      <p class="q-help">Tu situación, tu historia, lo que sea. Cuanto más me cuentes, mejor puedo acompañarte. Y sí, lo leo todo.</p>
+      <textarea class="q-textarea" id="f-contexto" placeholder="Ej: Dejé el fútbol hace dos años por una lesión y todavía no sé muy bien qué sigue..."></textarea>
+    </div>
+ 
+  </div>
+ 
+  <!-- FOOTER -->
+  <div class="form-footer-inner">
+    <button type="submit" class="btn-submit-new">Enviar y empezar →</button>
+    <p class="trust-note">
+      <strong>Sin spam.</strong> Solo te escribo cuando tenga algo que valga la pena leer.<br/>
+      Cancela cuando quieras. Tu información no se comparte con nadie.
+    </p>
+  </div>
+  </form>
+ 
+  <!-- CONFIRMATION -->
+  <div class="form-confirmation" id="f-confirmation">
+    <div class="conf-icon-new">✦</div>
+    <h2>¡Bienvenida, <span id="f-confName">atleta</span>!</h2>
+    <p>Tu registro llegó. Esto es lo que pasa ahora:</p>
+    <div class="next-steps-block">
+      <div class="ns-title-f">Próximos pasos</div>
+      <div class="ns-item-f"><div class="ns-dot-f"></div>En las próximas horas te llega un email con tu primer recurso — personalizado según tu historia deportiva.</div>
+      <div class="ns-item-f" id="f-nsSession" style="display:none;"><div class="ns-dot-f"></div>Como pediste una sesión, te escribo para coordinar el horario que marcaste.</div>
+      <div class="ns-item-f"><div class="ns-dot-f"></div>Cada semana recibirás un artículo corto que conecta lo que ya sabes del deporte con aprender a programar.</div>
+      <div class="ns-item-f"><div class="ns-dot-f"></div>Cuando estés lista para el siguiente paso, yo estoy aquí.</div>
+    </div>
+    <div class="conf-tag-f">No empiezas desde cero. Empiezas desde el deporte. ✦</div>
+  </div>
+ 
+</div>
+ 
+<script src="scripts.js"></script>
+</body>
+</html>
