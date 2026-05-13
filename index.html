@@ -6,326 +6,89 @@
 <meta name="theme-color" content="#1a6b45"/>
  
 <!-- SEO -->
-<title>deatleta.dev – Newsletter gratuito para ex-atletas que entran a tech</title>
-<meta name="description" content="Newsletter gratuito en español para ex-atletas de alto rendimiento que quieren aprender programación y entrar al mundo de la tecnología. Por Leidy Sanchez, ex-futbolista profesional y frontend developer. No empiezas desde cero. Empiezas desde el deporte."/>
-<meta name="keywords" content="ex atletas tecnología, programación para deportistas, aprender frontend Colombia, transición carrera deportiva tech, newsletter programación español"/>
-<meta name="author" content="Leidy Sanchez"/>
-<meta name="robots" content="index, follow"/>
+<title>deatleta.dev – De la cancha al código</title>
+<meta name="description" content="El primer espacio en español para ex-atletas de alto rendimiento que quieren aprender programación frontend. No empiezas desde cero. Empiezas desde el deporte."/>
+<meta name="robots" content="noindex, follow"/>
 <link rel="canonical" href="https://deatleta.dev/"/>
- 
-<!-- GEO -->
-<meta name="geo.region" content="CO-DC"/>
-<meta name="geo.placename" content="Bogotá, Colombia"/>
-<meta name="geo.position" content="4.7110;-74.0721"/>
-<meta name="ICBM" content="4.7110, -74.0721"/>
  
 <!-- Open Graph -->
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://deatleta.dev/"/>
-<meta property="og:title" content="deatleta.dev – No empiezas desde cero. Empiezas desde el deporte."/>
-<meta property="og:description" content="Newsletter gratuito para ex-atletas que quieren entrar a tech. En español. Escrito por alguien que ya hizo el salto."/>
+<meta property="og:title" content="deatleta.dev – De la cancha al código"/>
+<meta property="og:description" content="El primer espacio en español para ex-atletas que quieren entrar a tech. No empiezas desde cero. Empiezas desde el deporte."/>
 <meta property="og:locale" content="es_CO"/>
 <meta property="og:site_name" content="deatleta.dev"/>
  
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="deatleta.dev – Newsletter para ex-atletas que entran a tech"/>
-<meta name="twitter:description" content="Newsletter gratuito para ex-atletas que quieren aprender programación. No empiezas desde cero. Empiezas desde el deporte."/>
- 
-<!-- JSON-LD: WebSite + Person + WebPage -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://deatleta.dev/#website",
-      "url": "https://deatleta.dev/",
-      "name": "deatleta.dev",
-      "description": "Newsletter y comunidad para ex-atletas de alto rendimiento que quieren entrar al mundo de la tecnología",
-      "inLanguage": "es"
-    },
-    {
-      "@type": "Person",
-      "@id": "https://deatleta.dev/#leidy",
-      "name": "Leidy Sanchez",
-      "jobTitle": "Frontend Developer",
-      "description": "Ex-futbolista profesional con más de 12 años de carrera, convertida en desarrolladora frontend. Fundadora de deatleta.dev, newsletter en español para ex-atletas que entran a tech.",
-      "url": "https://deatleta.dev/para-quien.html",
-      "knowsAbout": ["Desarrollo Frontend", "HTML", "CSS", "JavaScript", "Transición profesional al sector tecnológico", "Mentalidad atlética aplicada al aprendizaje técnico"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bogotá",
-        "addressRegion": "Cundinamarca",
-        "addressCountry": "CO"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://deatleta.dev/#webpage",
-      "url": "https://deatleta.dev/",
-      "name": "deatleta.dev – Newsletter gratuito para ex-atletas que entran a tech",
-      "description": "Newsletter gratuito en español para ex-atletas de alto rendimiento que quieren aprender programación y entrar al mundo de la tecnología.",
-      "inLanguage": "es",
-      "isPartOf": {"@id": "https://deatleta.dev/#website"},
-      "author": {"@id": "https://deatleta.dev/#leidy"},
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://deatleta.dev/"}
-        ]
-      }
-    }
-  ]
-}
-</script>
- 
 <link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
+<body class="intro-page">
  
-<a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+<!-- Formas decorativas de fondo -->
+<div class="intro-bg-shape intro-bg-shape--1" aria-hidden="true"></div>
+<div class="intro-bg-shape intro-bg-shape--2" aria-hidden="true"></div>
+<div class="intro-bg-shape intro-bg-shape--3" aria-hidden="true"></div>
  
-<header>
-  <nav class="lp-nav" aria-label="Navegación principal">
-    <a class="lp-logo" href="/" aria-label="deatleta.dev – Ir al inicio">de<span>atleta</span>.dev</a>
-    <div class="lp-nav-links">
-      <a href="para-quien.html">¿Para quién?</a>
-      <a href="como-funciona.html">Cómo funciona</a>
-      <a href="contenido.html">Contenido</a>
-      <a href="formulario-registro.html" class="lp-cta-nav">Únete gratis →</a>
-    </div>
-  </nav>
-</header>
+<main id="intro-main" class="intro-wrap">
  
-<main id="contenido-principal">
- 
-  <!-- HERO -->
-  <section class="hero" aria-labelledby="hero-heading">
-    <div class="hero-eyebrow" aria-hidden="true">por Leidy Sanchez · ex-futbolista profesional → dev</div>
-    <h1 id="hero-heading">No empiezas<br/>desde cero.<br/>Empiezas desde <em>el deporte.</em></h1>
-    <p class="hero-sub">Yo estuve exactamente donde estás tú. Dejé el deporte y creí que empezaba desde cero. Me equivoqué. Aquí te cuento por qué.</p>
-    <div class="hero-btns">
-      <a href="formulario-registro.html" class="btn-primary">Me apunto, es gratis</a>
-      <a href="como-funciona.html" class="btn-secondary">¿Cómo funciona?</a>
-    </div>
-    <p class="hero-social" aria-label="Más de 240 ex-atletas ya están aprendiendo">
-      <span class="social-faces" aria-hidden="true">
-        <span class="social-face">⚽</span>
-        <span class="social-face">🏊</span>
-        <span class="social-face">🏃</span>
-        <span class="social-face">🏐</span>
-      </span>
-      +240 ex-atletas ya están aprendiendo
-    </p>
-  </section>
- 
-  <!-- PROBLEM -->
-  <section aria-labelledby="problem-heading" style="background:white;padding:72px 32px;">
-  <div style="max-width:1000px;margin:0 auto;">
-    <h2 id="problem-heading" style="font-family:var(--serif);font-size:2rem;margin-bottom:12px;">¿Te suena esto?</h2>
-    <p style="color:var(--muted);font-size:0.95rem;margin-bottom:36px;max-width:480px;line-height:1.7;">
-      A mí me pasaron exactamente estas tres cosas cuando intenté entrar a tech. Si te identificas con alguna, estás en el lugar correcto.
-    </p>
-    <div class="problem-grid">
-      <article class="prob-card">
-        <div class="prob-emoji" aria-hidden="true">💔</div>
-        <strong>"Empecé cursos y los abandoné"</strong>
-        <p>Pagaste por 2 o 3 cursos online. Los empezaste con energía. Y a la tercera semana los cerraste. Y la culpa se siente parecida a perderte una final.</p>
-      </article>
-      <article class="prob-card">
-        <div class="prob-emoji" aria-hidden="true">🌀</div>
-        <strong>"No sé por dónde empezar"</strong>
-        <p>¿JavaScript? ¿Python? ¿Bootcamp de $3000? ¿YouTube a las 11pm? Hay demasiadas opciones y ninguna habla tu idioma.</p>
-      </article>
-      <article class="prob-card">
-        <div class="prob-emoji" aria-hidden="true">😶</div>
-        <strong>"No me veo como programadora"</strong>
-        <p>Los referentes de tech no se parecen a ti. Nadie que haya sudado una cancha durante 15 años está contando su historia en este mundo.</p>
-      </article>
-    </div>
+  <!-- Logo -->
+  <div class="intro-logo-mark" aria-label="deatleta.dev">
+    de<span>atleta</span>.dev
   </div>
-  </section>
  
-  <!-- BENEFITS -->
-  <section aria-labelledby="benefits-heading" style="background:var(--bg);padding:80px 32px;">
-  <div style="max-width:1000px;margin:0 auto;">
-    <div style="max-width:640px;margin:0 auto 56px;text-align:center;">
-      <h2 id="benefits-heading" style="font-family:var(--serif);font-size:2.4rem;font-weight:800;line-height:1.2;color:var(--text);margin-bottom:18px;">
-        Llevas años<br/>preparándote para esto.<br/><em style="font-style:normal;color:var(--green);">Solo nadie te lo había dicho.</em>
-      </h2>
-      <p style="font-size:1.02rem;color:#4b5563;line-height:1.8;max-width:520px;margin:0 auto;">
-        La disciplina de entrenar cuando no quieres, la resiliencia de volver después de una lesión, la mentalidad de mejorar un 1% cada día — eso no es el pasado.<br/>
-        <strong style="color:var(--text);">Es exactamente lo que hace falta para aprender a programar.</strong>
-      </p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:52px;">
-      <article style="background:white;border-radius:18px;padding:28px 24px;border:1px solid var(--border);border-top:3px solid var(--green);box-shadow:0 2px 16px rgba(0,0,0,0.04);">
-        <div style="width:44px;height:44px;background:var(--green-light);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:16px;" aria-hidden="true">🧭</div>
-        <h3 style="font-size:1rem;font-weight:700;margin-bottom:10px;color:var(--text);line-height:1.35;">Una ruta clara,<br/>hecha para ti</h3>
-        <p style="font-size:0.82rem;color:var(--muted);line-height:1.65;">Sin elegir entre cien opciones. Sin perderte en tutoriales de YouTube a las 11pm. Un camino ordenado, en español, que parte de donde estás hoy y sabe a dónde va.</p>
-      </article>
-      <article style="background:white;border-radius:18px;padding:28px 24px;border:1px solid var(--border);border-top:3px solid var(--navy);box-shadow:0 2px 16px rgba(0,0,0,0.04);">
-        <div style="width:44px;height:44px;background:var(--navy-light);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:16px;" aria-hidden="true">🏆</div>
-        <h3 style="font-size:1rem;font-weight:700;margin-bottom:10px;color:var(--text);line-height:1.35;">Tu pasado deportivo<br/>es tu ventaja</h3>
-        <p style="font-size:0.82rem;color:var(--muted);line-height:1.65;">Aprenderás a convertir años de disciplina atlética en algo concreto: cómo nombrarlo en tu LinkedIn, presentarlo en una entrevista y usarlo cada vez que el código se ponga difícil.</p>
-      </article>
-      <article style="background:white;border-radius:18px;padding:28px 24px;border:1px solid var(--border);border-top:3px solid var(--orange);box-shadow:0 2px 16px rgba(0,0,0,0.04);">
-        <div style="width:44px;height:44px;background:var(--orange-light);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:16px;" aria-hidden="true">🤝</div>
-        <h3 style="font-size:1rem;font-weight:700;margin-bottom:10px;color:var(--text);line-height:1.35;">Acompañamiento<br/>sin positivismo vacío</h3>
-        <p style="font-size:0.82rem;color:var(--muted);line-height:1.65;">No "tú puedes" sin más. Guía de alguien que dejó el deporte profesional, aprendió a programar desde cero y sabe exactamente en qué parte del camino se quiere soltar todo.</p>
-      </article>
-    </div>
-    <div style="text-align:center;">
-      <a href="formulario-registro.html" style="display:inline-block;background:var(--green);color:white;padding:16px 40px;border-radius:12px;font-weight:800;font-size:1rem;text-decoration:none;box-shadow:0 4px 20px rgba(26,107,69,0.35);letter-spacing:0.2px;">
-        Quiero empezar — es gratis →
-      </a>
-      <p style="margin-top:18px;font-size:0.82rem;color:var(--muted);line-height:1.6;">
-        Más de <strong style="color:var(--text);">240 ex-atletas</strong> ya están aprendiendo.<br/>
-        Sin pagar un bootcamp. Sin dejar de ser quienes son.
-      </p>
-    </div>
+  <!-- Etiqueta de categoría -->
+  <div class="intro-badge" aria-hidden="true">Newsletter · Frontend · Comunidad</div>
+ 
+  <!-- Headline principal -->
+  <h1 class="intro-h1">
+    De la cancha<br/>al <em>código.</em>
+  </h1>
+ 
+  <!-- Qué es / descripción -->
+  <p class="intro-desc">
+    El primer espacio en español para ex-atletas de alto rendimiento
+    que quieren entrar al mundo de la tecnología —
+    sin empezar desde cero.
+  </p>
+ 
+  <!-- Los tres pilares del sitio -->
+  <div class="intro-pillars" role="list" aria-label="Qué encontrarás en deatleta.dev">
+ 
+    <article class="intro-pillar" role="listitem">
+      <span class="pillar-icon" aria-hidden="true">⚽</span>
+      <strong>Tu deporte,<br/>tu ventaja</strong>
+      <span>La disciplina atlética es exactamente la base que necesitas para aprender a programar.</span>
+    </article>
+ 
+    <article class="intro-pillar" role="listitem">
+      <span class="pillar-icon" aria-hidden="true">💻</span>
+      <strong>Frontend<br/>paso a paso</strong>
+      <span>HTML, CSS y JavaScript explicados con las mismas progresiones que usaste en el entrenamiento.</span>
+    </article>
+ 
+    <article class="intro-pillar" role="listitem">
+      <span class="pillar-icon" aria-hidden="true">🤝</span>
+      <strong>Comunidad<br/>de ex-atletas</strong>
+      <span>Más de 240 personas que ya hicieron el salto. Referentes que se parecen a ti.</span>
+    </article>
+ 
   </div>
-  </section>
  
-  <!-- PARA QUIEN -->
-  <section class="section" aria-labelledby="who-heading">
-    <h2 id="who-heading" style="font-family:var(--serif);font-size:2rem;margin-bottom:12px;">¿Esto eres tú?</h2>
-    <p style="color:var(--muted);font-size:0.92rem;margin-bottom:32px;max-width:480px;line-height:1.7;">
-      Valentina es como yo era hace unos años. Y como tú tal vez eres hoy.
-    </p>
-    <div class="who-wrap">
-      <div class="who-avatar-wrap">
-        <div class="who-avatar">
-          <img src="https://api.dicebear.com/9.x/adventurer/svg?seed=Valentina-atleta&backgroundColor=1a6b45&skinColor=brown,darkBrown&hair=long19,long20&hairColor=black,brown" alt="Valentina, ex-atleta de 28 años en transición hacia tech" width="120" height="120" onerror="this.parentElement.innerHTML='🏃‍♀️'"/>
-        </div>
-        <p class="who-name">Valentina</p>
-        <p class="who-role">Ex-futbolista · 28 años · Bogotá</p>
-        <blockquote class="who-quote">"Sé lo que es entrenar doble jornada. Solo necesito que alguien me diga que eso sirve aquí también."</blockquote>
-      </div>
-      <ul class="who-list" aria-label="Características del perfil de usuaria">
-        <li><span class="who-check" aria-hidden="true">✦</span> Fue atleta de competencia. No de fin de semana — de verdad.</li>
-        <li><span class="who-check" aria-hidden="true">✦</span> Dejó el deporte y todavía no sabe muy bien quién es después de eso</li>
-        <li><span class="who-check" aria-hidden="true">✦</span> Siente que "empieza desde cero" en tech — y se equivoca</li>
-        <li><span class="who-check" aria-hidden="true">✦</span> Ha intentado aprender a programar y lo ha dejado</li>
-        <li><span class="who-check" aria-hidden="true">✦</span> Quiere un camino claro, no otro curso interminable</li>
-        <li><span class="who-check" aria-hidden="true">✦</span> Necesita verse reflejada en alguien que ya hizo el salto</li>
-      </ul>
-    </div>
-  </section>
- 
-  <!-- HOW IT WORKS -->
-  <section class="how-bg" aria-labelledby="how-heading">
-    <div class="how-inner">
-      <h2 id="how-heading" style="font-family:var(--serif);font-size:2rem;color:white;margin-bottom:12px;">Tres pasos. Sin cursos de $3000.</h2>
-      <p style="color:rgba(255,255,255,0.65);font-size:0.9rem;max-width:420px;line-height:1.7;margin-bottom:36px;">
-        Lo mismo que en el deporte: un objetivo, un plan, repetición.
-      </p>
-      <ol class="steps-row" style="list-style:none;">
-        <li class="step-card">
-          <div class="step-num" aria-hidden="true">1</div>
-          <h3>Me cuentas de dónde vienes</h3>
-          <p>Qué deporte, cuánto tiempo, dónde estás hoy. Cinco preguntas. Sin compromiso.</p>
-          <span class="step-arrow" aria-hidden="true">→</span>
-        </li>
-        <li class="step-card">
-          <div class="step-num" aria-hidden="true">2</div>
-          <h3>Recibe contenido que tiene sentido para ti</h3>
-          <p>Un artículo por semana. En español. Que conecta lo que ya sabes del deporte con programar.</p>
-          <span class="step-arrow" aria-hidden="true">→</span>
-        </li>
-        <li class="step-card">
-          <div class="step-num" aria-hidden="true">3</div>
-          <h3>Terminas tu primer proyecto</h3>
-          <p>No otro tutorial abandonado. Uno real, tuyo, terminado. Ese es el objetivo.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
- 
-  <!-- CONTENT PILLARS -->
-  <section class="section" aria-labelledby="pillars-heading">
-    <h2 id="pillars-heading" style="font-family:var(--serif);font-size:2rem;margin-bottom:32px;">Qué escribo cada semana</h2>
-    <div class="pillars-grid">
-      <article class="pillar">
-        <div class="pillar-icon" style="background:#dcfce7;" aria-hidden="true">🧠</div>
-        <div>
-          <h3 class="pillar" style="font-size:inherit;">Tu cabeza atlética, en código</h3>
-          <p>Cómo volver después de una lesión y cómo depurar un bug roto son la misma habilidad. Te lo demuestro.</p>
-        </div>
-      </article>
-      <article class="pillar">
-        <div class="pillar-icon" style="background:#dbeafe;" aria-hidden="true">🗺️</div>
-        <div>
-          <h3 class="pillar" style="font-size:inherit;">Por dónde empezar (de verdad)</h3>
-          <p>Sin el caos de opciones. Una ruta concreta desde donde estás hoy hasta tu primer proyecto.</p>
-        </div>
-      </article>
-      <article class="pillar">
-        <div class="pillar-icon" style="background:#fff7ed;" aria-hidden="true">💼</div>
-        <div>
-          <h3 class="pillar" style="font-size:inherit;">Tu pasado deportivo como ventaja</h3>
-          <p>Cómo contarlo en LinkedIn, en una entrevista, en tu CV. Que no parezca un hueco — porque no lo es.</p>
-        </div>
-      </article>
-      <article class="pillar">
-        <div class="pillar-icon" style="background:#f3e8ff;" aria-hidden="true">🤝</div>
-        <div>
-          <h3 class="pillar" style="font-size:inherit;">Personas que entienden lo mismo que tú</h3>
-          <p>Otras ex-atletas haciendo el mismo camino. Porque aprender sola cansa más.</p>
-        </div>
-      </article>
-    </div>
-  </section>
- 
-  <!-- TESTIMONIALS -->
-  <section aria-labelledby="testimonials-heading" style="background:white;padding:72px 32px;">
-  <div style="max-width:1000px;margin:0 auto;">
-    <div class="section-tag tag-purple" style="display:inline-block;" aria-hidden="true">Lo que dicen</div>
-    <h2 id="testimonials-heading" style="font-family:var(--serif);font-size:2rem;margin-bottom:32px;">Lo que dicen otras atletas</h2>
-    <div class="testimonials">
-      <figure class="testi">
-        <blockquote class="testi-text">"Llevaba meses intentando aprender frontend y sintiendo que no era para mí. La primera vez que leí un artículo aquí entendí que el problema no era yo — era que nadie había traducido esto a mi lenguaje."</blockquote>
-        <figcaption class="testi-author">
-          <div class="testi-avatar" aria-hidden="true">LC</div>
-          <div><p class="testi-name">Laura C.</p><p class="testi-sport">Ex-nadadora · Medellín</p></div>
-        </figcaption>
-      </figure>
-      <figure class="testi">
-        <blockquote class="testi-text">"Lo que más me ayudó fue darme cuenta de que saber volver después de una lesión es exactamente lo mismo que volver después de atascarse en un bug. Mi carrera deportiva no fue un desperdicio."</blockquote>
-        <figcaption class="testi-author">
-          <div class="testi-avatar" aria-hidden="true">MR</div>
-          <div><p class="testi-name">María R.</p><p class="testi-sport">Ex-volleybolista · Cali</p></div>
-        </figcaption>
-      </figure>
-      <figure class="testi">
-        <blockquote class="testi-text">"Terminé mi primer proyecto en HTML/CSS en 3 semanas. No lo hice porque soy 'buena para la tecnología'. Lo hice porque alguien finalmente me explicó esto como si fuera entrenamiento."</blockquote>
-        <figcaption class="testi-author">
-          <div class="testi-avatar" aria-hidden="true">JP</div>
-          <div><p class="testi-name">Juliana P.</p><p class="testi-sport">Ex-atleta de pista · Bogotá</p></div>
-        </figcaption>
-      </figure>
-    </div>
+  <!-- Botones de acción -->
+  <div class="intro-cta-wrap">
+    <a href="landing.html" class="intro-btn-primary">Descubrir deatleta.dev →</a>
+    <a href="formulario-registro.html" class="intro-btn-secondary">Ya quiero unirme — es gratis</a>
   </div>
-  </section>
  
-  <!-- CTA REGISTER -->
-  <section class="reg-section" aria-labelledby="cta-heading">
-    <h2 id="cta-heading">¿Empezamos?</h2>
-    <p>Gratis. Tu email y listo. Yo me encargo del resto.</p>
-    <form class="reg-inline" action="formulario-registro.html" onsubmit="this.submit()" aria-label="Registro rápido por email">
-      <label for="reg-email" class="visually-hidden">Tu dirección de email</label>
-      <input class="reg-input" type="email" id="reg-email" name="email" placeholder="tu@email.com" autocomplete="email" aria-required="true"/>
-      <button class="reg-btn" type="submit">Vamos →</button>
-    </form>
-    <p class="reg-fine">Sin spam. Cancela cuando quieras.</p>
-  </section>
+  <!-- Autor / Pie -->
+  <p class="intro-footer-note">
+    Creado por <strong>Leidy Sanchez</strong> ·
+    Ex-futbolista profesional → Frontend Developer ·
+    Bogotá, Colombia
+  </p>
  
-</main>
- 
+</main> 
 <footer class="lp-footer">
-  <p>© 2025 deatleta.dev · Hecho desde Bogotá, Colombia · por <a href="para-quien.html" style="color:inherit;text-decoration:underline;">Leidy Sanchez</a></p>
+  <p>© 2026 deatleta.dev · Hecho desde Bogotá, Colombia · por <a href="para-quien.html" style="color:inherit;text-decoration:underline;">Leidy Sanchez</a></p>
 </footer>
- 
 </body>
 </html>
