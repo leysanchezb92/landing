@@ -1,0 +1,43 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://deatleta.dev/contenido.html#webpage",
+      "url": "https://deatleta.dev/contenido.html",
+      "name": "Contenido del newsletter deatleta.dev",
+      "description": "Pilares de contenido, artículos de muestra y formato del newsletter semanal de deatleta.dev.",
+      "inLanguage": "es",
+      "isPartOf": {
+        "@id": "https://deatleta.dev/#website"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://deatleta.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contenido",
+            "item": "https://deatleta.dev/contenido.html"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Periodical",
+      "name": "Newsletter deatleta.dev",
+      "publisher": {
+        "@id": "https://deatleta.dev/#leidy"
+      },
+      "inLanguage": "es",
+      "issn": null,
+      "description": "Newsletter semanal en español para ex-atletas que aprenden programación frontend."
+    }
+  ]
+}

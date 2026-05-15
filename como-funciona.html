@@ -38,6 +38,7 @@
 <meta name="twitter:image" content="https://deatleta.dev/assets/img/og-default.svg"/>
 
 <!-- JSON-LD: WebPage + HowTo + FAQPage + BreadcrumbList -->
+<!-- JSON-LD:start como-funciona -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,13 +50,27 @@
       "name": "Cómo funciona deatleta.dev – De ex-atleta a frontend developer",
       "description": "Proceso paso a paso de deatleta.dev: desde el registro hasta tu primer proyecto.",
       "inLanguage": "es",
-      "isPartOf": {"@id": "https://deatleta.dev/#website"},
-      "author": {"@id": "https://deatleta.dev/#leidy"},
+      "isPartOf": {
+        "@id": "https://deatleta.dev/#website"
+      },
+      "author": {
+        "@id": "https://deatleta.dev/#leidy"
+      },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://deatleta.dev/"},
-          {"@type": "ListItem", "position": 2, "name": "Cómo funciona", "item": "https://deatleta.dev/como-funciona.html"}
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://deatleta.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Cómo funciona",
+            "item": "https://deatleta.dev/como-funciona.html"
+          }
         ]
       }
     },
@@ -64,29 +79,102 @@
       "name": "Cómo aprender programación frontend siendo ex-atleta con deatleta.dev",
       "description": "Proceso de cinco pasos para que una ex-atleta de alto rendimiento aprenda programación frontend y termine su primer proyecto.",
       "totalTime": "P6M",
-      "estimatedCost": {"@type": "MonetaryAmount", "currency": "COP", "value": "0"},
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "COP",
+        "value": "0"
+      },
       "step": [
-        {"@type": "HowToStep", "position": 1, "name": "Me cuentas tu historia", "text": "Completas el formulario de 5 preguntas sobre tu deporte, cuánto tiempo, y dónde estás hoy con la programación. Menos de 2 minutos.", "url": "https://deatleta.dev/formulario-registro.html"},
-        {"@type": "HowToStep", "position": 2, "name": "Recibes tu primer recurso personalizado", "text": "En menos de 24 horas llega un email con el primer recurso adaptado a tu historia deportiva y tu nivel actual de programación."},
-        {"@type": "HowToStep", "position": 3, "name": "Un artículo por semana, en tu idioma", "text": "Cada semana recibes un artículo corto en español que conecta tu experiencia deportiva con aprender a programar. Con ejercicio práctico al final."},
-        {"@type": "HowToStep", "position": 4, "name": "Sesión de orientación 1:1 (opcional)", "text": "Si lo necesitas, puedes pedir una sesión individual para revisar dónde estás, qué te bloquea y cuál es el siguiente paso concreto."},
-        {"@type": "HowToStep", "position": 5, "name": "Tu primer proyecto terminado", "text": "El objetivo final es que termines un proyecto real, tuyo, que puedas mostrar — no solo acumular teoría."}
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Me cuentas tu historia",
+          "text": "Completas el formulario de 5 preguntas sobre tu deporte, cuánto tiempo, y dónde estás hoy con la programación. Menos de 2 minutos.",
+          "url": "https://deatleta.dev/formulario-registro.html"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Recibes tu primer recurso personalizado",
+          "text": "En menos de 24 horas llega un email con el primer recurso adaptado a tu historia deportiva y tu nivel actual de programación."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Un artículo por semana, en tu idioma",
+          "text": "Cada semana recibes un artículo corto en español que conecta tu experiencia deportiva con aprender a programar. Con ejercicio práctico al final."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Sesión de orientación 1:1 (opcional)",
+          "text": "Si lo necesitas, puedes pedir una sesión individual para revisar dónde estás, qué te bloquea y cuál es el siguiente paso concreto."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Tu primer proyecto terminado",
+          "text": "El objetivo final es que termines un proyecto real, tuyo, que puedas mostrar — no solo acumular teoría."
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "¿Realmente es gratis? ¿Qué hay de pago?", "acceptedAnswer": {"@type": "Answer", "text": "El newsletter semanal y la guía de bienvenida son completamente gratis. La sesión 1:1 de orientación tiene un costo si decides pedirla, pero nunca es obligatoria. No hay trampa de 'gratis los primeros 7 días'."}},
-        {"@type": "Question", "name": "¿Necesito saber algo de programación para empezar?", "acceptedAnswer": {"@type": "Answer", "text": "No. El contenido está diseñado para funcionar desde cero absoluto. Si ya tienes algo de HTML o JavaScript, también funciona — el punto de partida cambia pero la filosofía es la misma."}},
-        {"@type": "Question", "name": "¿Cuánto tiempo necesito dedicarle a la semana?", "acceptedAnswer": {"@type": "Answer", "text": "El artículo semanal toma 5-7 minutos de lectura. El ejercicio práctico puede tomar entre 20 y 45 minutos si decides hacerlo. El ritmo es tuyo."}},
-        {"@type": "Question", "name": "¿Qué deporte tenía que practicar para que esto aplique?", "acceptedAnswer": {"@type": "Answer", "text": "Cualquiera: fútbol, natación, atletismo, voleibol, tenis, baloncesto, ciclismo. Lo que importa es la experiencia de haber entrenado en serio, competido y vuelto después de una derrota o lesión."}},
-        {"@type": "Question", "name": "¿Puedo cancelar la suscripción cuando quiera?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. En cada email hay un enlace para darte de baja con un clic. Sin preguntas, sin formularios."}},
-        {"@type": "Question", "name": "¿deatleta.dev garantiza conseguir trabajo en tech?", "acceptedAnswer": {"@type": "Answer", "text": "No. Ningún newsletter puede garantizar eso. Lo que sí puede hacer es darte un camino claro, recursos concretos y acompañamiento de alguien que ya lo recorrió. El resto depende de ti — igual que en el deporte."}}
+        {
+          "@type": "Question",
+          "name": "¿Realmente es gratis? ¿Qué hay de pago?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El newsletter semanal y la guía de bienvenida son completamente gratis. La sesión 1:1 de orientación tiene un costo si decides pedirla, pero nunca es obligatoria. No hay trampa de 'gratis los primeros 7 días'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito saber algo de programación para empezar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. El contenido está diseñado para funcionar desde cero absoluto. Si ya tienes algo de HTML o JavaScript, también funciona — el punto de partida cambia pero la filosofía es la misma."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo necesito dedicarle a la semana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El artículo semanal toma 5-7 minutos de lectura. El ejercicio práctico puede tomar entre 20 y 45 minutos si decides hacerlo. El ritmo es tuyo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué deporte tenía que practicar para que esto aplique?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cualquiera: fútbol, natación, atletismo, voleibol, tenis, baloncesto, ciclismo. Lo que importa es la experiencia de haber entrenado en serio, competido y vuelto después de una derrota o lesión."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo cancelar la suscripción cuando quiera?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. En cada email hay un enlace para darte de baja con un clic. Sin preguntas, sin formularios."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿deatleta.dev garantiza conseguir trabajo en tech?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Ningún newsletter puede garantizar eso. Lo que sí puede hacer es darte un camino claro, recursos concretos y acompañamiento de alguien que ya lo recorrió. El resto depende de ti — igual que en el deporte."
+          }
+        }
       ]
     }
   ]
 }
 </script>
+<!-- JSON-LD:end -->
 
 <!-- Fuentes -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>

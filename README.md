@@ -48,28 +48,60 @@ Construimos el sitio completo: landing page, formulario de registro con lógica 
 ---
  
 ## Estructura del proyecto
- 
+
 ```
 deatleta.dev/
 │
-├── index.html              → Redirige a landing.html (página raíz)
-├── landing.html            → Página principal
-├── para-quien.html         → Perfil de la audiencia objetivo
-├── como-funciona.html      → Proceso y pasos del servicio
-├── contenido.html          → Pilares de contenido y muestra de artículos
+├── index.html               → Splash / portada
+├── landing.html             → Página principal
+├── para-quien.html          → Perfil de la audiencia objetivo
+├── como-funciona.html       → Proceso y pasos del servicio
+├── contenido.html           → Pilares de contenido y muestra de artículos
 ├── formulario-registro.html → Formulario de 5 preguntas con lógica condicional
-├── flujo-usuario.html      → Mapa del journey completo de la usuaria
 │
-├── styles.css              → Estilos compartidos de todas las páginas
-└── scripts.js              → JavaScript (FAQ interactivo)
+├── robots.txt               → Política de crawlers
+├── sitemap.xml              → Mapa para motores de búsqueda
+│
+├── css/                     → Estilos organizados por capa
+│   ├── base/                  · tokens, reset, layout primitives
+│   ├── components/            · nav, footer, buttons, hero, faq, form, …
+│   └── pages/                 · estilos específicos de cada página
+│
+├── js/                      → JavaScript por componente
+│   ├── faq.js                 · acordeón de preguntas frecuentes
+│   └── form.js                · lógica del formulario de registro
+│
+├── assets/img/              → Favicon, Open Graph y otros SVGs
+│
+├── schema/                  → Source of truth de JSON-LD (un .json por página)
+│   ├── index.json, landing.json, para-quien.json,
+│   │   como-funciona.json, contenido.json, formulario-registro.json
+│
+├── build.mjs                → Inyecta schema/*.json en los .html (ver abajo)
+└── package.json             → `npm run build`
 ```
- 
+
 ### Decisiones técnicas
- 
-- **Sin frameworks**: todo el proyecto es HTML, CSS y JS puro — sin React, sin Vue, sin dependencias. Esto lo hace fácil de desplegar en cualquier plataforma estática.
-- **CSS con variables**: se usó un sistema de design tokens (`--green`, `--navy`, `--orange`, etc.) para mantener consistencia visual en todas las páginas.
+
+- **Sin frameworks**: todo el proyecto es HTML, CSS y JS puro — sin React, sin Vue, sin dependencias en producción. El único requisito de desarrollo es Node (solo para `npm run build`, sin instalar paquetes externos).
+- **CSS con variables**: design tokens (`--green`, `--navy`, `--orange`, …) en `css/base/tokens.css`. Cada página carga únicamente los componentes que usa, no el CSS completo del sitio.
+- **JavaScript modular**: cada componente interactivo tiene su propio archivo, sin handlers inline en el HTML.
+- **SEO con JSON-LD**: cada página tiene su propio esquema en `schema/*.json` y el build script lo inyecta en el HTML. Así editas el JSON una vez y queda consistente con el HTML que sirven los buscadores.
+- **Performance**: fuentes con `display:swap`, CSS dividido para que cada página cargue solo lo necesario, imágenes locales (sin llamadas externas a DiceBear u otros), `loading="lazy"` y `decoding="async"` en imágenes no críticas.
 - **Formulario inteligente**: el formulario de registro detecta si la usuaria quiere una sesión directa y muestra un bloque de horarios de forma condicional.
-- **Responsive**: todas las páginas se adaptan a móvil con un breakpoint en 700px.
+- **Responsive**: todas las páginas se adaptan a móvil con un breakpoint en 700px (600px para el formulario).
+
+### Editar el JSON-LD (estructura de datos para SEO)
+
+El JSON-LD se mantiene **fuera del HTML** para que sea más fácil de leer y modificar, pero los motores de búsqueda solo lo entienden cuando está **inline** dentro del HTML. Para resolverlo:
+
+1. Edita el archivo correspondiente en `schema/`. Por ejemplo `schema/landing.json` para la página principal.
+2. Corre el build:
+   ```
+   npm run build
+   ```
+3. El script reemplaza el contenido del `<script type="application/ld+json">` de cada `.html` por el JSON actualizado.
+4. Haz commit de los `.json` **y** de los `.html` (los `.html` son artefactos, pero se versionan para que el sitio funcione sin tener que correr el build en el despliegue).
 ---
  
 ## Lo que aprendí

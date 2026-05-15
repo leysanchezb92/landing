@@ -1,0 +1,12 @@
+{
+  "name": "deatleta.dev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Newsletter en español para ex-atletas que entran a tech.",
+  "author": "Leidy Sanchez",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}

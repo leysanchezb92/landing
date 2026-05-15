@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://deatleta.dev/#website",
+      "url": "https://deatleta.dev/",
+      "name": "deatleta.dev",
+      "description": "Newsletter y comunidad para ex-atletas de alto rendimiento que quieren entrar al mundo de la tecnología",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://deatleta.dev/#leidy",
+      "name": "Leidy Sanchez",
+      "jobTitle": "Frontend Developer",
+      "description": "Ex-futbolista profesional con más de 12 años de carrera, convertida en desarrolladora frontend. Fundadora de deatleta.dev, newsletter en español para ex-atletas que entran a tech.",
+      "url": "https://deatleta.dev/para-quien.html",
+      "knowsAbout": [
+        "Desarrollo Frontend",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Transición profesional al sector tecnológico",
+        "Mentalidad atlética aplicada al aprendizaje técnico"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bogotá",
+        "addressRegion": "Cundinamarca",
+        "addressCountry": "CO"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://deatleta.dev/landing.html#webpage",
+      "url": "https://deatleta.dev/landing.html",
+      "name": "deatleta.dev – Newsletter gratuito para ex-atletas que entran a tech",
+      "description": "Newsletter gratuito en español para ex-atletas de alto rendimiento que quieren aprender programación y entrar al mundo de la tecnología.",
+      "inLanguage": "es",
+      "isPartOf": {
+        "@id": "https://deatleta.dev/#website"
+      },
+      "author": {
+        "@id": "https://deatleta.dev/#leidy"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://deatleta.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Landing",
+            "item": "https://deatleta.dev/landing.html"
+          }
+        ]
+      }
+    }
+  ]
+}
