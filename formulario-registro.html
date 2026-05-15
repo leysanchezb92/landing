@@ -4,13 +4,17 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="theme-color" content="#1a6b45"/>
- 
+
 <!-- SEO -->
 <title>Registro – Únete a deatleta.dev</title>
 <meta name="description" content="Regístrate gratis en deatleta.dev. Cinco preguntas para personalizar tu experiencia como ex-atleta que aprende a programar. Menos de 2 minutos."/>
+<meta name="author" content="Leidy Sanchez"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://deatleta.dev/formulario-registro.html"/>
- 
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg"/>
+
 <!-- Open Graph -->
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://deatleta.dev/formulario-registro.html"/>
@@ -18,7 +22,15 @@
 <meta property="og:description" content="Cinco preguntas para personalizar tu camino de ex-atleta a desarrolladora frontend."/>
 <meta property="og:locale" content="es_CO"/>
 <meta property="og:site_name" content="deatleta.dev"/>
- 
+<meta property="og:image" content="https://deatleta.dev/assets/img/og-default.svg"/>
+<meta property="og:image:alt" content="deatleta.dev — De la cancha al código"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Únete a deatleta.dev"/>
+<meta name="twitter:description" content="Cinco preguntas. Menos de 2 minutos. Gratis."/>
+<meta name="twitter:image" content="https://deatleta.dev/assets/img/og-default.svg"/>
+
 <!-- JSON-LD -->
 <script type="application/ld+json">
 {
@@ -39,16 +51,29 @@
   }
 }
 </script>
- 
-<link rel="stylesheet" href="styles.css"/>
+
+<!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" media="print" onload="this.media='all'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"/></noscript>
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/base/tokens.css"/>
+<link rel="stylesheet" href="css/base/reset.css"/>
+<link rel="stylesheet" href="css/components/nav.css"/>
+<link rel="stylesheet" href="css/components/footer.css"/>
+<link rel="stylesheet" href="css/components/form.css"/>
+<link rel="stylesheet" href="css/pages/formulario.css"/>
 </head>
 <body class="form-page">
- 
+
 <a href="#form-card" class="skip-link">Saltar al formulario</a>
- 
+
 <header>
   <nav class="lp-nav" aria-label="Navegación principal">
-    <a class="lp-logo" href="/" aria-label="deatleta.dev – Ir al inicio">de<span>atleta</span>.dev</a>
+    <a class="lp-logo" href="landing.html" aria-label="deatleta.dev – Ir al inicio">de<span>atleta</span>.dev</a>
     <div class="lp-nav-links">
       <a href="para-quien.html">¿Para quién?</a>
       <a href="como-funciona.html">Cómo funciona</a>
@@ -57,17 +82,17 @@
     </div>
   </nav>
 </header>
- 
+
 <main>
 <div class="form-card" id="form-card">
- 
+
   <!-- HEADER -->
   <header class="form-header">
     <p class="eyebrow" aria-hidden="true">deatleta.dev · Registro</p>
     <h1>Cuéntame<br/>tu <em>historia</em></h1>
     <p>Cinco preguntas para entender de dónde vienes y cómo acompañarte mejor. Menos de 2 minutos.</p>
   </header>
- 
+
   <!-- PROGRESS DOTS -->
   <div class="progress-row" id="progressRow" role="status" aria-live="polite" aria-label="Progreso del formulario">
     <span class="prog-dot active" id="d1" aria-hidden="true"></span>
@@ -77,11 +102,11 @@
     <span class="prog-dot" id="d5" aria-hidden="true"></span>
     <span class="prog-label" id="progLabel">Pregunta 1 de 5</span>
   </div>
- 
+
   <!-- FORM -->
-  <form id="mainForm" onsubmit="handleFormSubmit(event)" novalidate aria-label="Formulario de registro">
+  <form id="mainForm" novalidate aria-label="Formulario de registro">
   <div class="form-body">
- 
+
     <!-- P1: Nombre + Email -->
     <div class="q-block">
       <p class="q-label" id="q1-titulo">¿Cómo te llamas y cuál es tu email?</p>
@@ -105,9 +130,9 @@
         </div>
       </div>
     </div>
- 
+
     <div class="q-divider" role="separator"></div>
- 
+
     <!-- P2: Deporte -->
     <div class="q-block">
       <label for="f-deporte" class="q-label">¿Qué deporte practicaste?</label>
@@ -118,9 +143,9 @@
         aria-describedby="q2-ayuda"
         aria-required="true"/>
     </div>
- 
+
     <div class="q-divider" role="separator"></div>
- 
+
     <!-- P3: Nivel tech -->
     <fieldset class="q-block">
       <legend class="q-label">¿Cuánto sabes de programación hoy?</legend>
@@ -140,59 +165,59 @@
         </label>
       </div>
     </fieldset>
- 
+
     <div class="q-divider" role="separator"></div>
- 
+
     <!-- P4: Necesidad + condicional sesión -->
     <fieldset class="q-block">
       <legend class="q-label">¿Qué necesitas ahora mismo?</legend>
       <p class="q-help" id="q4-ayuda">Esto me ayuda a entender qué tipo de acompañamiento tiene más sentido para ti desde el primer día.</p>
       <div class="choices" role="group" aria-describedby="q4-ayuda">
         <label class="choice">
-          <input type="radio" name="f-necesidad" value="info" onchange="toggleScheduler(false)"/>
+          <input type="radio" name="f-necesidad" value="info"/>
           <div class="choice-text"><strong>Quiero entender si esto es para mí</strong><span>Me interesa pero todavía tengo dudas</span></div>
         </label>
         <label class="choice">
-          <input type="radio" name="f-necesidad" value="aprender" onchange="toggleScheduler(false)"/>
+          <input type="radio" name="f-necesidad" value="aprender"/>
           <div class="choice-text"><strong>Quiero empezar a aprender frontend</strong><span>Ya decidí y quiero una ruta concreta</span></div>
         </label>
         <label class="choice">
-          <input type="radio" name="f-necesidad" value="sesion" onchange="toggleScheduler(true)"/>
+          <input type="radio" name="f-necesidad" value="sesion"/>
           <div class="choice-text"><strong>Quiero hablar contigo directamente</strong><span>Prefiero una sesión de orientación antes de empezar</span></div>
         </label>
         <label class="choice">
-          <input type="radio" name="f-necesidad" value="claro" onchange="toggleScheduler(false)"/>
+          <input type="radio" name="f-necesidad" value="claro"/>
           <div class="choice-text"><strong>Aún no lo tengo claro</strong><span>Solo quiero explorar por ahora</span></div>
         </label>
       </div>
       <div class="conditional" id="f-schedulerBlock" aria-live="polite" aria-atomic="false">
         <strong id="scheduler-title">¿Cuándo tienes disponibilidad?</strong>
-        <span style="font-size:0.76rem;color:var(--muted);">Elige la que más te funcione y coordino algo ese día.</span>
+        <span class="conditional-hint">Elige la que más te funcione y coordino algo ese día.</span>
         <div class="time-chips" role="group" aria-labelledby="scheduler-title">
-          <button type="button" class="chip" onclick="selectChip(this)" aria-pressed="false">Mañanas</button>
-          <button type="button" class="chip" onclick="selectChip(this)" aria-pressed="false">Tardes</button>
-          <button type="button" class="chip" onclick="selectChip(this)" aria-pressed="false">Noches</button>
-          <button type="button" class="chip" onclick="selectChip(this)" aria-pressed="false">Fines de semana</button>
+          <button type="button" class="chip" aria-pressed="false">Mañanas</button>
+          <button type="button" class="chip" aria-pressed="false">Tardes</button>
+          <button type="button" class="chip" aria-pressed="false">Noches</button>
+          <button type="button" class="chip" aria-pressed="false">Fines de semana</button>
         </div>
       </div>
     </fieldset>
- 
+
     <div class="q-divider" role="separator"></div>
- 
+
     <!-- P5: Contexto libre -->
     <div class="q-block">
       <label for="f-contexto" class="q-label">
         ¿Hay algo más que quieras contarme?
-        <span style="font-weight:400;color:#9ca3af;"> (opcional)</span>
+        <span class="q-label-optional"> (opcional)</span>
       </label>
       <p class="q-help" id="q5-ayuda">Tu situación, tu historia, lo que sea. Cuanto más me cuentes, mejor puedo acompañarte. Y sí, lo leo todo.</p>
       <textarea class="q-textarea" id="f-contexto"
         placeholder="Ej: Dejé el fútbol hace dos años por una lesión y todavía no sé muy bien qué sigue..."
         aria-describedby="q5-ayuda"></textarea>
     </div>
- 
+
   </div>
- 
+
   <!-- FOOTER -->
   <div class="form-footer-inner">
     <button type="submit" class="btn-submit-new">Enviar y empezar →</button>
@@ -202,7 +227,7 @@
     </p>
   </div>
   </form>
- 
+
   <!-- CONFIRMATION -->
   <div class="form-confirmation" id="f-confirmation" role="status" aria-live="polite" aria-atomic="true">
     <div class="conf-icon-new" aria-hidden="true">✦</div>
@@ -211,18 +236,19 @@
     <div class="next-steps-block">
       <p class="ns-title-f">Próximos pasos</p>
       <div class="ns-item-f"><div class="ns-dot-f" aria-hidden="true"></div>En las próximas horas te llega un email con tu primer recurso — personalizado según tu historia deportiva.</div>
-      <div class="ns-item-f" id="f-nsSession" style="display:none;"><div class="ns-dot-f" aria-hidden="true"></div>Como pediste una sesión, te escribo para coordinar el horario que marcaste.</div>
+      <div class="ns-item-f hidden" id="f-nsSession"><div class="ns-dot-f" aria-hidden="true"></div>Como pediste una sesión, te escribo para coordinar el horario que marcaste.</div>
       <div class="ns-item-f"><div class="ns-dot-f" aria-hidden="true"></div>Cada semana recibirás un artículo corto que conecta lo que ya sabes del deporte con aprender a programar.</div>
       <div class="ns-item-f"><div class="ns-dot-f" aria-hidden="true"></div>Cuando estés lista para el siguiente paso, yo estoy aquí.</div>
     </div>
     <p class="conf-tag-f">No empiezas desde cero. Empiezas desde el deporte. ✦</p>
   </div>
- 
+
 </div>
 </main>
 <footer class="lp-footer">
-  <p>© 2026 deatleta.dev · Hecho desde Bogotá, Colombia · por <a href="para-quien.html" style="color:inherit;text-decoration:underline;">Leidy Sanchez</a></p>
+  <p>© 2026 deatleta.dev · Hecho desde Bogotá, Colombia · por <a href="para-quien.html">Leidy Sanchez</a></p>
 </footer>
-<script src="scripts.js"></script>
+
+<script src="js/form.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+/* ============================================
+   FAQ acordeón
+   ============================================ */
+.faq { margin-top: 40px; }
+
+.faq-item {
+  background: white;
+  border-radius: 14px;
+  padding: 0;
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-q {
+  width: 100%;
+  padding: 18px 22px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-family: var(--sans);
+  text-align: left;
+}
+.faq-q::after {
+  content: '＋';
+  font-size: 1.1rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+.faq-item.open .faq-q::after { content: '－'; }
+.faq-item.open .faq-q[aria-expanded="true"]::after { content: '－'; }
+
+.faq-a {
+  display: none;
+  padding: 0 22px 18px;
+  font-size: 0.84rem;
+  color: #374151;
+  line-height: 1.7;
+}
+.faq-item.open .faq-a { display: block; }

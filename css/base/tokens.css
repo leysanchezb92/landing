@@ -1,0 +1,33 @@
+/* ============================================
+   Design tokens — colores, tipografías y variables compartidas
+   ============================================ */
+:root {
+  /* Verdes (color principal) */
+  --green:        #1a6b45;
+  --green2:       #15803d;
+  --green-light:  #dcfce7;
+  --green-bg:     #f0fdf4;
+
+  /* Azul marino (color secundario) */
+  --navy:        #1e3a5f;
+  --navy-light:  #dbeafe;
+
+  /* Naranja (CTA) */
+  --orange:       #ea580c;
+  --orange-light: #fff7ed;
+
+  /* Morado (acento) */
+  --purple:       #7c3aed;
+  --purple-light: #f5f3ff;
+
+  /* Neutros */
+  --bg:     #f7f6f2;
+  --card:   #ffffff;
+  --text:   #111827;
+  --muted:  #6b7280;
+  --border: #e5e7eb;
+
+  /* Familias tipográficas */
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans:  'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}

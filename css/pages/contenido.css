@@ -1,0 +1,222 @@
+/* ============================================
+   Contenido — pilares, artículos de muestra, formato
+   ============================================ */
+
+/* Grid contenedor de pilares — usado también por landing */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+/* Pilares (con tarjetas grandes) */
+.pillar-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px 24px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+.pillar-card .pillar-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+.pillar-card .pillar-icon.pi-green  { background: #dcfce7; }
+.pillar-card .pillar-icon.pi-navy   { background: #dbeafe; }
+.pillar-card .pillar-icon.pi-orange { background: #fff7ed; }
+.pillar-card .pillar-icon.pi-purple { background: #f3e8ff; }
+
+.pillar-card h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+.pillar-card p {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+.pillar-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.topic-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #f3f4f6;
+  color: #374151;
+}
+
+/* Artículos de muestra */
+.articles-bg {
+  background: white;
+  padding: 72px 32px;
+}
+.articles-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.articles-inner h2 {
+  font-family: var(--serif);
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.articles-inner .section-lead {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+}
+.article-card {
+  background: var(--bg);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.article-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+.article-cat {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+.article-cat.cat-green  { background: #dcfce7; color: #166534; }
+.article-cat.cat-navy   { background: #dbeafe; color: #1e40af; }
+.article-cat.cat-orange { background: #fff7ed; color: #c2410c; }
+.article-cat.cat-purple { background: #f3e8ff; color: #6d28d9; }
+
+.article-card h4 {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.article-card p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.article-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  color: #9ca3af;
+}
+.article-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #d1d5db;
+}
+.article-locked,
+.article-paid {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+.article-locked {
+  color: var(--green2);
+  background: var(--green-light);
+}
+.article-paid {
+  color: var(--muted);
+  background: #f3f4f6;
+}
+
+/* Formato */
+.format-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+.format-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+.format-icon { font-size: 2rem; margin-bottom: 14px; }
+.format-card h4 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.format-card p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Newsletter preview wrapper */
+.newsletter-section {
+  background: white;
+  padding: 72px 32px;
+}
+.newsletter-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.newsletter-inner h2 {
+  font-family: var(--serif);
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.newsletter-inner .section-lead {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+  .articles-grid,
+  .format-grid,
+  .pillars-grid { grid-template-columns: 1fr; }
+}

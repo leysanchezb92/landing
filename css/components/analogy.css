@@ -1,0 +1,84 @@
+/* ============================================
+   Analogía deporte / programación (como-funciona.html)
+   ============================================ */
+.analogy-bg {
+  background: white;
+  padding: 72px 32px;
+}
+.analogy-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.analogy-bg h2 {
+  font-family: var(--serif);
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.analogy-lead {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.analogy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-top: 40px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.analogy-col { padding: 28px 32px; }
+.analogy-col.sport { background: linear-gradient(160deg, #0f2a1a, #1a6b45); color: white; }
+.analogy-col.tech  { background: var(--bg); }
+
+.analogy-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+.analogy-col.sport .analogy-header { color: rgba(255, 255, 255, 0.6); }
+.analogy-col.tech  .analogy-header { color: var(--green2); }
+
+.analogy-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.analogy-col.tech .analogy-item { border-color: #f3f4f6; }
+.analogy-item:last-child { border-bottom: none; }
+
+.analogy-icon {
+  font-size: 1rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.analogy-text strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.analogy-col.sport .analogy-text strong { color: white; }
+.analogy-col.tech  .analogy-text strong { color: var(--text); }
+
+.analogy-text span {
+  font-size: 0.76rem;
+  opacity: 0.7;
+  line-height: 1.45;
+}
+.analogy-col.sport .analogy-text span { color: rgba(255, 255, 255, 0.65); }
+
+@media (max-width: 700px) {
+  .analogy-grid { grid-template-columns: 1fr; }
+}

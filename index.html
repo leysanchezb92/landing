@@ -4,13 +4,17 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="theme-color" content="#1a6b45"/>
- 
+
 <!-- SEO -->
 <title>deatleta.dev – De la cancha al código</title>
 <meta name="description" content="El primer espacio en español para ex-atletas de alto rendimiento que quieren aprender programación frontend. No empiezas desde cero. Empiezas desde el deporte."/>
-<meta name="robots" content="noindex, follow"/>
+<meta name="author" content="Leidy Sanchez"/>
+<meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://deatleta.dev/"/>
- 
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg"/>
+
 <!-- Open Graph -->
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://deatleta.dev/"/>
@@ -18,77 +22,121 @@
 <meta property="og:description" content="El primer espacio en español para ex-atletas que quieren entrar a tech. No empiezas desde cero. Empiezas desde el deporte."/>
 <meta property="og:locale" content="es_CO"/>
 <meta property="og:site_name" content="deatleta.dev"/>
- 
-<link rel="stylesheet" href="styles.css"/>
+<meta property="og:image" content="https://deatleta.dev/assets/img/og-default.svg"/>
+<meta property="og:image:alt" content="deatleta.dev — De la cancha al código"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="deatleta.dev – De la cancha al código"/>
+<meta name="twitter:description" content="El primer espacio en español para ex-atletas que entran a tech."/>
+<meta name="twitter:image" content="https://deatleta.dev/assets/img/og-default.svg"/>
+
+<!-- JSON-LD: WebSite + Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://deatleta.dev/#website",
+      "url": "https://deatleta.dev/",
+      "name": "deatleta.dev",
+      "description": "Newsletter y comunidad para ex-atletas de alto rendimiento que quieren entrar al mundo de la tecnología",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://deatleta.dev/#leidy",
+      "name": "Leidy Sanchez",
+      "jobTitle": "Frontend Developer",
+      "description": "Ex-futbolista profesional con más de 12 años de carrera, convertida en desarrolladora frontend.",
+      "url": "https://deatleta.dev/para-quien.html",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bogotá",
+        "addressRegion": "Cundinamarca",
+        "addressCountry": "CO"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Fuentes: preconnect + carga con display:swap -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@800&display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@800&display=swap" media="print" onload="this.media='all'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@800&display=swap"/></noscript>
+
+<!-- CSS (página intro: tokens + reset + intro + footer) -->
+<link rel="stylesheet" href="css/base/tokens.css"/>
+<link rel="stylesheet" href="css/base/reset.css"/>
+<link rel="stylesheet" href="css/components/footer.css"/>
+<link rel="stylesheet" href="css/components/intro.css"/>
 </head>
 <body class="intro-page">
- 
+
 <!-- Formas decorativas de fondo -->
 <div class="intro-bg-shape intro-bg-shape--1" aria-hidden="true"></div>
 <div class="intro-bg-shape intro-bg-shape--2" aria-hidden="true"></div>
 <div class="intro-bg-shape intro-bg-shape--3" aria-hidden="true"></div>
- 
+
 <main id="intro-main" class="intro-wrap">
- 
-  <!-- Logo -->
+
   <div class="intro-logo-mark" aria-label="deatleta.dev">
     de<span>atleta</span>.dev
   </div>
- 
-  <!-- Etiqueta de categoría -->
+
   <div class="intro-badge" aria-hidden="true">Newsletter · Frontend · Comunidad</div>
- 
-  <!-- Headline principal -->
+
   <h1 class="intro-h1">
     De la cancha<br/>al <em>código.</em>
   </h1>
- 
-  <!-- Qué es / descripción -->
+
   <p class="intro-desc">
     El primer espacio en español para ex-atletas de alto rendimiento
     que quieren entrar al mundo de la tecnología —
     sin empezar desde cero.
   </p>
- 
-  <!-- Los tres pilares del sitio -->
+
   <div class="intro-pillars" role="list" aria-label="Qué encontrarás en deatleta.dev">
- 
+
     <article class="intro-pillar" role="listitem">
       <span class="pillar-icon" aria-hidden="true">⚽</span>
       <strong>Tu deporte,<br/>tu ventaja</strong>
       <span>La disciplina atlética es exactamente la base que necesitas para aprender a programar.</span>
     </article>
- 
+
     <article class="intro-pillar" role="listitem">
       <span class="pillar-icon" aria-hidden="true">💻</span>
       <strong>Frontend<br/>paso a paso</strong>
       <span>HTML, CSS y JavaScript explicados con las mismas progresiones que usaste en el entrenamiento.</span>
     </article>
- 
+
     <article class="intro-pillar" role="listitem">
       <span class="pillar-icon" aria-hidden="true">🤝</span>
       <strong>Comunidad<br/>de ex-atletas</strong>
       <span>Más de 240 personas que ya hicieron el salto. Referentes que se parecen a ti.</span>
     </article>
- 
+
   </div>
- 
-  <!-- Botones de acción -->
+
   <div class="intro-cta-wrap">
     <a href="landing.html" class="intro-btn-primary">Descubrir deatleta.dev →</a>
     <a href="formulario-registro.html" class="intro-btn-secondary">Ya quiero unirme — es gratis</a>
   </div>
- 
-  <!-- Autor / Pie -->
+
   <p class="intro-footer-note">
     Creado por <strong>Leidy Sanchez</strong> ·
     Ex-futbolista profesional → Frontend Developer ·
     Bogotá, Colombia
   </p>
- 
-</main> 
+
+</main>
+
 <footer class="lp-footer">
-  <p>© 2026 deatleta.dev · Hecho desde Bogotá, Colombia · por <a href="para-quien.html" style="color:inherit;text-decoration:underline;">Leidy Sanchez</a></p>
+  <p>© 2026 deatleta.dev · Hecho desde Bogotá, Colombia · por <a href="para-quien.html">Leidy Sanchez</a></p>
 </footer>
 </body>
 </html>
