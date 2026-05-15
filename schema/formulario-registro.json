@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://deatleta.dev/formulario-registro.html",
+  "url": "https://deatleta.dev/formulario-registro.html",
+  "name": "Registro – Únete a deatleta.dev",
+  "description": "Formulario de registro para el newsletter deatleta.dev para ex-atletas que aprenden programación.",
+  "inLanguage": "es",
+  "isPartOf": {
+    "@id": "https://deatleta.dev/#website"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://deatleta.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Registro",
+        "item": "https://deatleta.dev/formulario-registro.html"
+      }
+    ]
+  }
+}

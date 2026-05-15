@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://deatleta.dev/para-quien.html#webpage",
+      "url": "https://deatleta.dev/para-quien.html",
+      "name": "¿Para quién es deatleta.dev?",
+      "description": "Perfil de la audiencia objetivo de deatleta.dev: ex-atletas de alto rendimiento en transición hacia el sector tech.",
+      "inLanguage": "es",
+      "isPartOf": {
+        "@id": "https://deatleta.dev/#website"
+      },
+      "about": {
+        "@id": "https://deatleta.dev/#leidy"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://deatleta.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "¿Para quién?",
+            "item": "https://deatleta.dev/para-quien.html"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://deatleta.dev/#leidy",
+      "name": "Leidy Sanchez",
+      "jobTitle": "Frontend Developer",
+      "description": "Ex-futbolista profesional convertida en desarrolladora frontend.",
+      "url": "https://deatleta.dev/para-quien.html",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bogotá",
+        "addressRegion": "Cundinamarca",
+        "addressCountry": "CO"
+      }
+    }
+  ]
+}
