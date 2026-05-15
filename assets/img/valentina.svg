@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Valentina, ex-atleta de 28 años en transición hacia tech">
+  <defs>
+    <linearGradient id="vbg" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a6b45"/>
+      <stop offset="1" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <clipPath id="vclip">
+      <circle cx="60" cy="60" r="60"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#vclip)">
+    <rect width="120" height="120" fill="url(#vbg)"/>
+    <!-- Hair back -->
+    <path d="M22 78c0-22 17-40 38-40s38 18 38 40v42H22z" fill="#3b2418"/>
+    <!-- Face -->
+    <ellipse cx="60" cy="65" rx="22" ry="26" fill="#8b5a3c"/>
+    <!-- Neck -->
+    <rect x="50" y="86" width="20" height="14" rx="4" fill="#7a4d33"/>
+    <!-- Shoulders / shirt -->
+    <path d="M28 120c0-12 14-22 32-22s32 10 32 22v0H28z" fill="#dcfce7"/>
+    <!-- Hair front -->
+    <path d="M38 50c0-14 10-22 22-22s22 8 22 22c-4-6-12-10-22-10s-18 4-22 10z" fill="#3b2418"/>
+    <!-- Eyes -->
+    <ellipse cx="51" cy="64" rx="2" ry="2.6" fill="#1a1a1a"/>
+    <ellipse cx="69" cy="64" rx="2" ry="2.6" fill="#1a1a1a"/>
+    <!-- Smile -->
+    <path d="M52 75c2 4 6 6 8 6s6-2 8-6" stroke="#5a2f1c" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+/* ============================================
+   Navegación principal
+   ============================================ */
+.lp-nav {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.lp-logo {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--green);
+  text-decoration: none;
+}
+.lp-logo span { color: var(--navy); }
+
+.lp-nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.lp-nav-links a {
+  font-size: 0.83rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.lp-nav-links a:hover { color: var(--text); }
+.lp-nav-links a.active,
+.lp-nav-links a[aria-current="page"] {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.lp-cta-nav {
+  background: var(--green);
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 0.83rem;
+  font-weight: 700 !important;
+  text-decoration: none;
+}
+.lp-cta-nav:hover { background: var(--green2) !important; }
+
+@media (max-width: 700px) {
+  .lp-nav-links { display: none; }
+}

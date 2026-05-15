@@ -85,10 +85,8 @@ Lo más valioso no fue el código — fue el proceso de usar IA para convertir e
 ## Despliegue
  
 El sitio está construido con archivos estáticos y puede desplegarse en cualquier plataforma que sirva HTML:
- 
-- **Netlify**: arrastra la carpeta a [netlify.com/drop](https://netlify.com/drop)
+
 - **GitHub Pages**: sube los archivos a un repositorio y activa Pages en Settings
-- **Vercel**: conecta el repositorio y despliega automáticamente
 ---
  
 ## Autora

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="deatleta.dev — De la cancha al código">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#061a0e"/>
+      <stop offset=".28" stop-color="#0f3d22"/>
+      <stop offset=".58" stop-color="#1a6b45"/>
+      <stop offset="1" stop-color="#0d2240"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="180" cy="345" r="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6ee7b7" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#6ee7b7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="1020" cy="120" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#93c5fd" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#93c5fd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Logo -->
+  <text x="90" y="120"
+        font-family="Inter, system-ui, sans-serif"
+        font-size="28" font-weight="800" letter-spacing="-1">
+    <tspan fill="#6ee7b7">de</tspan><tspan fill="#93c5fd">atleta</tspan><tspan fill="#6ee7b7">.dev</tspan>
+  </text>
+
+  <!-- Etiqueta -->
+  <g transform="translate(90 165)">
+    <rect width="370" height="40" rx="20" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)"/>
+    <text x="185" y="27"
+          font-family="Inter, system-ui, sans-serif"
+          font-size="14" font-weight="700"
+          letter-spacing="3" text-anchor="middle"
+          fill="rgba(255,255,255,0.75)">NEWSLETTER · FRONTEND · COMUNIDAD</text>
+  </g>
+
+  <!-- Headline -->
+  <text x="90" y="320"
+        font-family="Playfair Display, Georgia, serif"
+        font-size="92" font-weight="800" fill="#ffffff">
+    De la cancha
+  </text>
+  <text x="90" y="420"
+        font-family="Playfair Display, Georgia, serif"
+        font-size="92" font-weight="800">
+    <tspan fill="#ffffff">al </tspan><tspan fill="#6ee7b7" font-style="italic">código.</tspan>
+  </text>
+
+  <!-- Subtítulo -->
+  <text x="90" y="495"
+        font-family="Inter, system-ui, sans-serif"
+        font-size="26" font-weight="500"
+        fill="rgba(255,255,255,0.7)">
+    El primer espacio en español para ex-atletas que entran a tech.
+  </text>
+
+  <!-- Pie -->
+  <text x="90" y="565"
+        font-family="Inter, system-ui, sans-serif"
+        font-size="20" font-weight="600"
+        fill="rgba(255,255,255,0.5)">
+    Por Leidy Sanchez · Ex-futbolista profesional · Bogotá, Colombia
+  </text>
+</svg>
