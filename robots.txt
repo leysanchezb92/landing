@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /formulario-registro.html
+
+Sitemap: https://deatleta.dev/sitemap.xml

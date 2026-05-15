@@ -1,0 +1,101 @@
+/* Article preview cards (contenido.html) */
+.articles-bg {
+  background: white;
+  padding: 72px 32px;
+}
+.articles-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.article-card {
+  background: var(--bg);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.article-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.article-cat {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+.article-cat--green { background: #dcfce7; color: #166534; }
+.article-cat--navy { background: #dbeafe; color: #1e40af; }
+.article-cat--orange { background: #fff7ed; color: #c2410c; }
+.article-cat--purple { background: #f3e8ff; color: #6d28d9; }
+
+.article-card h4,
+.article-card h3 {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.article-card p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.article-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  color: #9ca3af;
+}
+.article-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #d1d5db;
+}
+
+.article-locked {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+.article-locked--free {
+  color: var(--green2);
+  background: var(--green-light);
+}
+.article-locked--paid {
+  color: var(--muted);
+  background: #f3f4f6;
+}
+
+@media (max-width: 700px) {
+  .articles-grid { grid-template-columns: 1fr; }
+}

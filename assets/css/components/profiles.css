@@ -1,0 +1,60 @@
+/* Audience profile cards on para-quien.html */
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px 24px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.profile-sport {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+.profile-sport--green { background: var(--green-light); }
+.profile-sport--navy { background: var(--navy-light); }
+.profile-sport--orange { background: var(--orange-light); }
+
+.profile-card h3 { font-size: 1rem; font-weight: 800; margin-bottom: 4px; }
+.profile-card .sub {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.profile-desc {
+  font-size: 0.82rem;
+  color: #374151;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.profile-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: var(--green-light);
+  color: var(--green2);
+}
+
+@media (max-width: 700px) {
+  .profiles-grid { grid-template-columns: 1fr; }
+}

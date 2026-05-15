@@ -1,0 +1,45 @@
+/* Testimonial cards on landing */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.testi {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid var(--border);
+}
+.testi-text {
+  font-size: 0.83rem;
+  font-style: italic;
+  color: #374151;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+.testi-author {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.testi-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a6b45, #1e3a5f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: white;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.testi-name { font-size: 0.78rem; font-weight: 700; }
+.testi-sport { font-size: 0.72rem; color: var(--muted); }
+
+@media (max-width: 700px) {
+  .testimonials { grid-template-columns: 1fr; }
+}

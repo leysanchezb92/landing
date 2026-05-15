@@ -1,0 +1,50 @@
+/*
+  deatleta.dev — Global stylesheet entry point.
+
+  Organized by responsibility:
+    base/        → tokens, reset, typography, accessibility primitives
+    layout/      → nav, footer, hero, section wrappers (page chrome)
+    components/  → reusable UI blocks (cards, buttons, faq, form, etc.)
+    pages/       → page-specific styles (only used by one page)
+
+  Single file to link from each HTML page: assets/css/main.css
+*/
+
+/* Base ----------------------------------------------- */
+@import url('./base/typography.css');
+@import url('./base/tokens.css');
+@import url('./base/reset.css');
+@import url('./base/a11y.css');
+
+/* Layout --------------------------------------------- */
+@import url('./layout/nav.css');
+@import url('./layout/footer.css');
+@import url('./layout/section.css');
+@import url('./layout/hero.css');
+
+/* Components ----------------------------------------- */
+@import url('./components/buttons.css');
+@import url('./components/problem-cards.css');
+@import url('./components/benefits.css');
+@import url('./components/who.css');
+@import url('./components/steps.css');
+@import url('./components/pillars.css');
+@import url('./components/testimonials.css');
+@import url('./components/register-inline.css');
+@import url('./components/cta-footer.css');
+@import url('./components/leidy-card.css');
+@import url('./components/profiles.css');
+@import url('./components/yes-no.css');
+@import url('./components/quote.css');
+@import url('./components/timeline.css');
+@import url('./components/analogy.css');
+@import url('./components/gets.css');
+@import url('./components/faq.css');
+@import url('./components/articles.css');
+@import url('./components/format-cards.css');
+@import url('./components/email-preview.css');
+@import url('./components/form.css');
+
+/* Pages ---------------------------------------------- */
+@import url('./pages/intro.css');
+@import url('./pages/form-page.css');

@@ -1,245 +1,295 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Contenido – deatleta.dev</title><link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#1a6b45"/>
+  <meta name="color-scheme" content="light"/>
+
+  <!-- SEO -->
+  <title>Contenido – deatleta.dev · Newsletter para ex-atletas que entran a tech</title>
+  <meta name="description" content="Los cuatro pilares de contenido del newsletter deatleta.dev: mentalidad atlética en código, ruta para empezar, narrativa profesional y comunidad. Una muestra de los artículos."/>
+  <meta name="author" content="Leidy Sanchez"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://deatleta.dev/contenido.html"/>
+
+  <!-- GEO -->
+  <meta name="geo.region" content="CO-DC"/>
+  <meta name="geo.placename" content="Bogotá, Colombia"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://deatleta.dev/contenido.html"/>
+  <meta property="og:title" content="Contenido de deatleta.dev – Cuatro pilares, un artículo por semana"/>
+  <meta property="og:description" content="Los cuatro temas que cubre el newsletter, una muestra de artículos y cómo es el formato."/>
+  <meta property="og:locale" content="es_CO"/>
+  <meta property="og:site_name" content="deatleta.dev"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Contenido – deatleta.dev"/>
+  <meta name="twitter:description" content="Cuatro pilares de contenido y artículos reales del newsletter."/>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://deatleta.dev/contenido.html",
+        "url": "https://deatleta.dev/contenido.html",
+        "name": "Contenido – deatleta.dev",
+        "description": "Los cuatro pilares del newsletter deatleta.dev y una muestra de sus artículos.",
+        "inLanguage": "es",
+        "isPartOf": {"@id": "https://deatleta.dev/#website"},
+        "author": {"@id": "https://deatleta.dev/#leidy"},
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://deatleta.dev/"},
+            {"@type": "ListItem", "position": 2, "name": "Contenido", "item": "https://deatleta.dev/contenido.html"}
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 <body>
- 
-<!-- NAV -->
-<nav class="lp-nav">
-  <a class="lp-logo" href="landing.html">de<span>atleta</span>.dev</a>
-  <div class="lp-nav-links">
-    <a href="para-quien.html">¿Para quién?</a>
-    <a href="como-funciona.html">Cómo funciona</a>
-    <a href="contenido.html" class="active">Contenido</a>
-    <a href="formulario-registro.html" class="lp-cta-nav">Únete gratis →</a>
-  </div>
-</nav>
- 
-<!-- HERO -->
-<div class="page-hero">
-  <div class="page-eyebrow">El contenido</div>
-  <h1>Artículos que<br/><em>no abandonas</em> a mitad.</h1>
-  <p>Cortos, en español, con un ejercicio práctico al final. Escritos para alguien que ya sabe lo que es el esfuerzo — no para principiantes genéricos.</p>
-</div>
- 
-<!-- PILARES -->
-<div class="section">
-  <div class="section-tag tag-green">Los pilares</div>
-  <h2>Cuatro temas. Todas las semanas.</h2>
-  <p class="section-lead">Todo el contenido gira alrededor de estos cuatro ejes. No son temas aislados — se conectan entre sí y con tu historia deportiva.</p>
-  <div class="pillars-grid">
- 
-    <div class="pillar-card">
-      <div class="pillar-icon" style="background:#dcfce7;">🧠</div>
-      <h3>Tu cabeza atlética, en código</h3>
-      <p>La mentalidad que desarrollaste entrenando — la disciplina, la resiliencia, la tolerancia a la frustración — tiene un equivalente exacto en programar. Aquí lo nombramos y lo usamos.</p>
-      <div class="pillar-topics">
-        <span class="topic-tag">Mentalidad de crecimiento</span>
-        <span class="topic-tag">Gestión de errores</span>
-        <span class="topic-tag">Rutinas de práctica</span>
-        <span class="topic-tag">Volver después de atascarse</span>
+
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+
+  <header>
+    <nav class="lp-nav" aria-label="Navegación principal">
+      <a class="lp-logo" href="landing.html" aria-label="deatleta.dev – Ir al inicio">de<span>atleta</span>.dev</a>
+      <div class="lp-nav-links">
+        <a href="para-quien.html">¿Para quién?</a>
+        <a href="como-funciona.html">Cómo funciona</a>
+        <a href="contenido.html" aria-current="page">Contenido</a>
+        <a href="formulario-registro.html" class="lp-cta-nav">Únete gratis →</a>
       </div>
-    </div>
- 
-    <div class="pillar-card">
-      <div class="pillar-icon" style="background:#dbeafe;">🗺️</div>
-      <h3>Por dónde empezar (de verdad)</h3>
-      <p>Sin el caos de opciones. Rutas concretas desde tu punto de partida. Qué aprender primero, qué ignorar, cómo saber si estás avanzando. Una decisión a la vez.</p>
-      <div class="pillar-topics">
-        <span class="topic-tag">HTML y CSS básico</span>
-        <span class="topic-tag">JavaScript para no desarrolladores</span>
-        <span class="topic-tag">Elegir tu primera ruta</span>
-        <span class="topic-tag">Tu primer proyecto real</span>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- HERO -->
+    <section class="page-hero" aria-labelledby="ph-heading">
+      <p class="page-eyebrow">El contenido</p>
+      <h1 id="ph-heading">Artículos que<br/><em>no abandonas</em> a mitad.</h1>
+      <p>Cortos, en español, con un ejercicio práctico al final. Escritos para alguien que ya sabe lo que es el esfuerzo — no para principiantes genéricos.</p>
+    </section>
+
+    <!-- PILARES -->
+    <section class="section" aria-labelledby="pillars-heading">
+      <p class="section-tag tag-green">Los pilares</p>
+      <h2 id="pillars-heading">Cuatro temas. Todas las semanas.</h2>
+      <p class="section-lead">Todo el contenido gira alrededor de estos cuatro ejes. No son temas aislados — se conectan entre sí y con tu historia deportiva.</p>
+      <div class="pillars-grid">
+        <article class="pillar-card">
+          <p class="pillar-icon pillar-icon--green" aria-hidden="true">🧠</p>
+          <h3>Tu cabeza atlética, en código</h3>
+          <p>La mentalidad que desarrollaste entrenando — la disciplina, la resiliencia, la tolerancia a la frustración — tiene un equivalente exacto en programar. Aquí lo nombramos y lo usamos.</p>
+          <ul class="pillar-topics" aria-label="Temas">
+            <li class="topic-tag">Mentalidad de crecimiento</li>
+            <li class="topic-tag">Gestión de errores</li>
+            <li class="topic-tag">Rutinas de práctica</li>
+            <li class="topic-tag">Volver después de atascarse</li>
+          </ul>
+        </article>
+        <article class="pillar-card">
+          <p class="pillar-icon pillar-icon--navy" aria-hidden="true">🗺️</p>
+          <h3>Por dónde empezar (de verdad)</h3>
+          <p>Sin el caos de opciones. Rutas concretas desde tu punto de partida. Qué aprender primero, qué ignorar, cómo saber si estás avanzando. Una decisión a la vez.</p>
+          <ul class="pillar-topics" aria-label="Temas">
+            <li class="topic-tag">HTML y CSS básico</li>
+            <li class="topic-tag">JavaScript para no desarrolladores</li>
+            <li class="topic-tag">Elegir tu primera ruta</li>
+            <li class="topic-tag">Tu primer proyecto real</li>
+          </ul>
+        </article>
+        <article class="pillar-card">
+          <p class="pillar-icon pillar-icon--orange" aria-hidden="true">💼</p>
+          <h3>Tu pasado deportivo como ventaja</h3>
+          <p>Cómo contar tu historia en LinkedIn, en una entrevista, en tu portfolio. Que años en el deporte no aparezcan como un hueco — porque no lo son.</p>
+          <ul class="pillar-topics" aria-label="Temas">
+            <li class="topic-tag">LinkedIn para ex-atletas</li>
+            <li class="topic-tag">CV de transición</li>
+            <li class="topic-tag">Entrevistas en tech</li>
+            <li class="topic-tag">Cómo hablar de tu deporte</li>
+          </ul>
+        </article>
+        <article class="pillar-card">
+          <p class="pillar-icon pillar-icon--purple" aria-hidden="true">🤝</p>
+          <h3>Personas que entienden lo mismo que tú</h3>
+          <p>Historias de otras ex-atletas haciendo el mismo camino. Entrevistas, recursos compartidos, experiencias reales. Porque aprender sola siempre cansa más.</p>
+          <ul class="pillar-topics" aria-label="Temas">
+            <li class="topic-tag">Historias reales</li>
+            <li class="topic-tag">Comunidad</li>
+            <li class="topic-tag">Recursos compartidos</li>
+            <li class="topic-tag">Entrevistas</li>
+          </ul>
+        </article>
       </div>
-    </div>
- 
-    <div class="pillar-card">
-      <div class="pillar-icon" style="background:#fff7ed;">💼</div>
-      <h3>Tu pasado deportivo como ventaja</h3>
-      <p>Cómo contar tu historia en LinkedIn, en una entrevista, en tu portfolio. Que años en el deporte no aparezcan como un hueco — porque no lo son.</p>
-      <div class="pillar-topics">
-        <span class="topic-tag">LinkedIn para ex-atletas</span>
-        <span class="topic-tag">CV de transición</span>
-        <span class="topic-tag">Entrevistas en tech</span>
-        <span class="topic-tag">Cómo hablar de tu deporte</span>
-      </div>
-    </div>
- 
-    <div class="pillar-card">
-      <div class="pillar-icon" style="background:#f3e8ff;">🤝</div>
-      <h3>Personas que entienden lo mismo que tú</h3>
-      <p>Historias de otras ex-atletas haciendo el mismo camino. Entrevistas, recursos compartidos, experiencias reales. Porque aprender sola siempre cansa más.</p>
-      <div class="pillar-topics">
-        <span class="topic-tag">Historias reales</span>
-        <span class="topic-tag">Comunidad</span>
-        <span class="topic-tag">Recursos compartidos</span>
-        <span class="topic-tag">Entrevistas</span>
-      </div>
-    </div>
- 
-  </div>
-</div>
- 
-<!-- ARTÍCULOS DE MUESTRA -->
-<div class="articles-bg">
-<div class="articles-inner">
-  <div class="section-tag tag-navy">Artículos</div>
-  <h2 style="font-family:var(--serif);font-size:2rem;margin-bottom:12px;">Una muestra de lo que escribo</h2>
-  <p style="color:var(--muted);font-size:0.95rem;max-width:560px;line-height:1.7;margin-bottom:8px;">
-    Estos son artículos reales del newsletter. Los marcados con el candado son exclusivos para suscriptoras.
-  </p>
-  <div class="articles-grid">
- 
-    <div class="article-card">
-      <div class="article-cat" style="background:#dcfce7;color:#166534;">🧠 Mentalidad</div>
-      <h4>"Volver después de una lesión" y "volver después de un bug" son la misma habilidad</h4>
-      <p>Sabes exactamente lo que es atascarte, frustrarte y volver. Lo practicaste miles de veces en el deporte. En código se llama depurar — y ya lo dominas más de lo que crees.</p>
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <div class="article-meta">
-          <span>5 min lectura</span>
-          <div class="article-dot"></div>
-          <span>Ejercicio incluido</span>
-        </div>
-        <div class="article-locked">🔓 Gratis</div>
-      </div>
-    </div>
- 
-    <div class="article-card">
-      <div class="article-cat" style="background:#dbeafe;color:#1e40af;">🗺️ Ruta</div>
-      <h4>Por qué empezar con HTML/CSS y no con Python (aunque todo el mundo diga lo contrario)</h4>
-      <p>La respuesta tiene que ver con cuándo empiezas a ver resultados. Y si vienes del deporte, sabes perfectamente que la retroalimentación rápida es lo que sostiene la práctica.</p>
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <div class="article-meta">
-          <span>6 min lectura</span>
-          <div class="article-dot"></div>
-          <span>Lista de recursos</span>
-        </div>
-        <div class="article-locked">🔓 Gratis</div>
-      </div>
-    </div>
- 
-    <div class="article-card">
-      <div class="article-cat" style="background:#fff7ed;color:#c2410c;">💼 Carrera</div>
-      <h4>Cómo poner tu experiencia deportiva en LinkedIn sin que parezca relleno</h4>
-      <p>No es "fui futbolista" en el titular. Es traducir disciplina, trabajo en equipo y presión a competir en términos que los reclutadores de tech reconocen y valoran.</p>
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <div class="article-meta">
-          <span>7 min lectura</span>
-          <div class="article-dot"></div>
-          <span>Plantilla incluida</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.72rem;font-weight:600;color:var(--muted);background:#f3f4f6;padding:4px 10px;border-radius:20px;">🔒 Suscriptoras</div>
-      </div>
-    </div>
- 
-    <div class="article-card">
-      <div class="article-cat" style="background:#f3e8ff;color:#6d28d9;">🤝 Historias</div>
-      <h4>De jugadora de voleibol a frontend developer: la historia de María</h4>
-      <p>María dejó el voleibol a los 27 después de una lesión de rodilla. Un año y medio después entró a su primer trabajo en tech. Esta es su historia — sin editar.</p>
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <div class="article-meta">
-          <span>8 min lectura</span>
-          <div class="article-dot"></div>
-          <span>Entrevista</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.72rem;font-weight:600;color:var(--muted);background:#f3f4f6;padding:4px 10px;border-radius:20px;">🔒 Suscriptoras</div>
-      </div>
-    </div>
- 
-  </div>
-</div>
-</div>
- 
-<!-- FORMATO -->
-<div class="section">
-  <div class="section-tag tag-orange">El formato</div>
-  <h2>Cómo son los artículos</h2>
-  <p class="section-lead">No es un blog de 3000 palabras. No es un hilo de Twitter. Es algo en el medio — pensado para leerse de principio a fin.</p>
-  <div class="format-grid">
-    <div class="format-card">
-      <div class="format-icon">⏱️</div>
-      <h4>5–8 minutos</h4>
-      <p>Cada artículo se puede leer en el tiempo que tardas en calentar antes de entrenar. Nada más, nada menos.</p>
-    </div>
-    <div class="format-card">
-      <div class="format-icon">🔗</div>
-      <h4>Siempre conectado al deporte</h4>
-      <p>Cada concepto técnico viene acompañado de una analogía deportiva concreta. No porque sea "bonito" — porque funciona mejor así.</p>
-    </div>
-    <div class="format-card">
-      <div class="format-icon">✍️</div>
-      <h4>Con ejercicio al final</h4>
-      <p>Cada artículo termina con algo que puedes hacer esa misma semana. Un ejercicio pequeño, aplicable, sin necesidad de instalar nada.</p>
-    </div>
-  </div>
-</div>
- 
-<!-- NEWSLETTER PREVIEW -->
-<div style="background:white;padding:72px 32px;">
-<div style="max-width:1000px;margin:0 auto;">
-  <div class="section-tag tag-purple">El newsletter</div>
-  <h2 style="font-family:var(--serif);font-size:2rem;margin-bottom:12px;">Llega cada semana a tu email</h2>
-  <p style="color:var(--muted);font-size:0.95rem;max-width:560px;line-height:1.7;margin-bottom:8px;">
-    No es una lista de correos masiva. Cada envío está pensado para que lo leas — no para que lo ignores.
-  </p>
-  <div class="preview-wrap">
-    <div class="preview-info">
-      <div class="eyebrow">deatleta.dev · Newsletter</div>
-      <h3>Un email a la semana.<br/>Que <em>vale la pena</em> leer.</h3>
-      <p>Frecuencia fija, contenido variable. Cada semana llega un artículo nuevo, sin repetir formato. A veces un análisis, a veces una historia, a veces una guía práctica.</p>
-      <div class="preview-stats">
-        <div class="p-stat">
-          <div class="p-stat-num">1/sem</div>
-          <div class="p-stat-label">Frecuencia</div>
-        </div>
-        <div class="p-stat">
-          <div class="p-stat-num">+240</div>
-          <div class="p-stat-label">Suscriptoras</div>
-        </div>
-        <div class="p-stat">
-          <div class="p-stat-num">68%</div>
-          <div class="p-stat-label">Tasa de apertura</div>
+    </section>
+
+    <!-- ARTÍCULOS -->
+    <section class="articles-bg" aria-labelledby="articles-heading">
+      <div class="articles-inner">
+        <p class="section-tag tag-navy">Artículos</p>
+        <h2 id="articles-heading">Una muestra de lo que escribo</h2>
+        <p class="section-lead">Estos son artículos reales del newsletter. Los marcados con el candado son exclusivos para suscriptoras.</p>
+        <div class="articles-grid">
+          <article class="article-card">
+            <p class="article-cat article-cat--green"><span aria-hidden="true">🧠</span> Mentalidad</p>
+            <h3>"Volver después de una lesión" y "volver después de un bug" son la misma habilidad</h3>
+            <p>Sabes exactamente lo que es atascarte, frustrarte y volver. Lo practicaste miles de veces en el deporte. En código se llama depurar — y ya lo dominas más de lo que crees.</p>
+            <div class="article-meta-row">
+              <p class="article-meta">
+                <span>5 min lectura</span>
+                <span class="article-dot" aria-hidden="true"></span>
+                <span>Ejercicio incluido</span>
+              </p>
+              <p class="article-locked article-locked--free"><span aria-hidden="true">🔓</span> Gratis</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <p class="article-cat article-cat--navy"><span aria-hidden="true">🗺️</span> Ruta</p>
+            <h3>Por qué empezar con HTML/CSS y no con Python (aunque todo el mundo diga lo contrario)</h3>
+            <p>La respuesta tiene que ver con cuándo empiezas a ver resultados. Y si vienes del deporte, sabes perfectamente que la retroalimentación rápida es lo que sostiene la práctica.</p>
+            <div class="article-meta-row">
+              <p class="article-meta">
+                <span>6 min lectura</span>
+                <span class="article-dot" aria-hidden="true"></span>
+                <span>Lista de recursos</span>
+              </p>
+              <p class="article-locked article-locked--free"><span aria-hidden="true">🔓</span> Gratis</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <p class="article-cat article-cat--orange"><span aria-hidden="true">💼</span> Carrera</p>
+            <h3>Cómo poner tu experiencia deportiva en LinkedIn sin que parezca relleno</h3>
+            <p>No es "fui futbolista" en el titular. Es traducir disciplina, trabajo en equipo y presión a competir en términos que los reclutadores de tech reconocen y valoran.</p>
+            <div class="article-meta-row">
+              <p class="article-meta">
+                <span>7 min lectura</span>
+                <span class="article-dot" aria-hidden="true"></span>
+                <span>Plantilla incluida</span>
+              </p>
+              <p class="article-locked article-locked--paid"><span aria-hidden="true">🔒</span> Suscriptoras</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <p class="article-cat article-cat--purple"><span aria-hidden="true">🤝</span> Historias</p>
+            <h3>De jugadora de voleibol a frontend developer: la historia de María</h3>
+            <p>María dejó el voleibol a los 27 después de una lesión de rodilla. Un año y medio después entró a su primer trabajo en tech. Esta es su historia — sin editar.</p>
+            <div class="article-meta-row">
+              <p class="article-meta">
+                <span>8 min lectura</span>
+                <span class="article-dot" aria-hidden="true"></span>
+                <span>Entrevista</span>
+              </p>
+              <p class="article-locked article-locked--paid"><span aria-hidden="true">🔒</span> Suscriptoras</p>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-    <div class="email-mock">
-      <div class="email-mock-top">
-        <div class="em-field"><strong>De:</strong> Leidy · deatleta.dev</div>
-        <div class="em-field"><strong>Para:</strong> tú@email.com</div>
-        <div class="em-field"><strong>Asunto:</strong> La lesión que te preparó para programar</div>
+    </section>
+
+    <!-- FORMATO -->
+    <section class="section" aria-labelledby="format-heading">
+      <p class="section-tag tag-orange">El formato</p>
+      <h2 id="format-heading">Cómo son los artículos</h2>
+      <p class="section-lead">No es un blog de 3000 palabras. No es un hilo de Twitter. Es algo en el medio — pensado para leerse de principio a fin.</p>
+      <div class="format-grid">
+        <article class="format-card">
+          <p class="format-icon" aria-hidden="true">⏱️</p>
+          <h3>5–8 minutos</h3>
+          <p>Cada artículo se puede leer en el tiempo que tardas en calentar antes de entrenar. Nada más, nada menos.</p>
+        </article>
+        <article class="format-card">
+          <p class="format-icon" aria-hidden="true">🔗</p>
+          <h3>Siempre conectado al deporte</h3>
+          <p>Cada concepto técnico viene acompañado de una analogía deportiva concreta. No porque sea "bonito" — porque funciona mejor así.</p>
+        </article>
+        <article class="format-card">
+          <p class="format-icon" aria-hidden="true">✍️</p>
+          <h3>Con ejercicio al final</h3>
+          <p>Cada artículo termina con algo que puedes hacer esa misma semana. Un ejercicio pequeño, aplicable, sin necesidad de instalar nada.</p>
+        </article>
       </div>
-      <div class="email-mock-body">
-        <div class="em-from">
-          <div class="em-avatar">LS</div>
-          <div>
-            <div class="em-name">Leidy Sanchez</div>
-            <div class="em-label">deatleta.dev · esta semana</div>
+    </section>
+
+    <!-- NEWSLETTER PREVIEW -->
+    <section class="section--white" aria-labelledby="newsletter-heading">
+      <div class="section-inner">
+        <p class="section-tag tag-purple">El newsletter</p>
+        <h2 id="newsletter-heading">Llega cada semana a tu email</h2>
+        <p class="section-lead">No es una lista de correos masiva. Cada envío está pensado para que lo leas — no para que lo ignores.</p>
+        <div class="preview-wrap">
+          <div class="preview-info">
+            <p class="eyebrow">deatleta.dev · Newsletter</p>
+            <h3>Un email a la semana.<br/>Que <em>vale la pena</em> leer.</h3>
+            <p>Frecuencia fija, contenido variable. Cada semana llega un artículo nuevo, sin repetir formato. A veces un análisis, a veces una historia, a veces una guía práctica.</p>
+            <dl class="preview-stats">
+              <div class="p-stat">
+                <dt class="visually-hidden">Frecuencia</dt>
+                <dd class="p-stat-num">1/sem</dd>
+                <dd class="p-stat-label">Frecuencia</dd>
+              </div>
+              <div class="p-stat">
+                <dt class="visually-hidden">Suscriptoras</dt>
+                <dd class="p-stat-num">+240</dd>
+                <dd class="p-stat-label">Suscriptoras</dd>
+              </div>
+              <div class="p-stat">
+                <dt class="visually-hidden">Tasa de apertura</dt>
+                <dd class="p-stat-num">68%</dd>
+                <dd class="p-stat-label">Tasa de apertura</dd>
+              </div>
+            </dl>
           </div>
+          <article class="email-mock" aria-label="Vista previa de un email">
+            <div class="email-mock-top">
+              <p class="em-field"><strong>De:</strong> Leidy · deatleta.dev</p>
+              <p class="em-field"><strong>Para:</strong> tú@email.com</p>
+              <p class="em-field"><strong>Asunto:</strong> La lesión que te preparó para programar</p>
+            </div>
+            <div class="email-mock-body">
+              <div class="em-from">
+                <span class="em-avatar" aria-hidden="true">LS</span>
+                <div>
+                  <p class="em-name">Leidy Sanchez</p>
+                  <p class="em-label">deatleta.dev · esta semana</p>
+                </div>
+              </div>
+              <p class="em-subject">La lesión que te preparó para programar 🧠</p>
+              <p class="em-preview">Hola. Esta semana quiero hablarte de algo que seguramente viviste en el deporte y que ningún bootcamp te va a enseñar: cómo volver cuando te caes del todo...</p>
+              <a href="formulario-registro.html" class="em-cta">Leer artículo completo →</a>
+              <p class="em-footer">deatleta.dev · Bogotá, Colombia · Darte de baja en un clic</p>
+            </div>
+          </article>
         </div>
-        <div class="em-subject">La lesión que te preparó para programar 🧠</div>
-        <div class="em-preview">Hola. Esta semana quiero hablarte de algo que seguramente viviste en el deporte y que ningún bootcamp te va a enseñar: cómo volver cuando te caes del todo...</div>
-        <a href="formulario-registro.html" class="em-cta">Leer artículo completo →</a>
-        <div class="em-footer">deatleta.dev · Bogotá, Colombia · Darte de baja en un clic</div>
       </div>
-    </div>
-  </div>
-</div>
-</div>
- 
-<!-- CTA -->
-<div class="cta-footer">
-  <h2>¿Quieres recibirlo cada semana?</h2>
-  <p>Gratis. Un email. Sin spam.<br/>El primero llega personalizado según tu historia deportiva.</p>
-  <a href="formulario-registro.html" class="btn-cta">Quiero suscribirme — es gratis →</a>
-  <p class="fine">Cancela cuando quieras. Sin preguntas.</p>
-</div>
- 
-<div class="lp-footer">
-  © 2026 deatleta.dev · Hecho desde Bogotá, Colombia · por Leidy Sanchez
-</div>
- 
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-footer" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">¿Quieres recibirlo cada semana?</h2>
+      <p>Gratis. Un email. Sin spam.<br/>El primero llega personalizado según tu historia deportiva.</p>
+      <a href="formulario-registro.html" class="btn-cta">Quiero suscribirme — es gratis →</a>
+      <p class="fine">Cancela cuando quieras. Sin preguntas.</p>
+    </section>
+
+  </main>
+
+  <footer class="lp-footer">
+    <p>© 2026 deatleta.dev · Hecho desde Bogotá, Colombia · por Leidy Sanchez</p>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

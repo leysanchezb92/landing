@@ -1,0 +1,21 @@
+/* Pull-quote block (para-quien) */
+.quote-block {
+  background: var(--green-bg);
+  border-left: 4px solid var(--green);
+  border-radius: 0 16px 16px 0;
+  padding: 24px 28px;
+  margin-top: 40px;
+}
+.quote-block blockquote {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--green2);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.quote-block cite {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: normal;
+}

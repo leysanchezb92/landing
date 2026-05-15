@@ -1,0 +1,19 @@
+/* Page-level layout for formulario-registro.html */
+.form-page {
+  background: linear-gradient(160deg, var(--green-bg) 0%, var(--navy-light) 100%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.form-page main {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+@media (max-width: 600px) {
+  .form-page main { padding: 24px 12px; }
+}

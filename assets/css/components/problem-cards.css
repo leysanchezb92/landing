@@ -1,0 +1,32 @@
+/* "¿Te suena esto?" problem cards on landing */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.prob-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-top: 3px solid #dc2626;
+}
+.prob-emoji { font-size: 1.4rem; margin-bottom: 10px; }
+.prob-card strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #b91c1c;
+}
+.prob-card p {
+  font-size: 0.79rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 700px) {
+  .problem-grid { grid-template-columns: 1fr; }
+}

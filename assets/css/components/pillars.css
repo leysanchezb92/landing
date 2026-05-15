@@ -1,0 +1,86 @@
+/* Content pillars — used on landing (compact) and contenido.html (full cards) */
+
+/* Compact pillar list on landing */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.pillar {
+  background: white;
+  border-radius: 14px;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.pillar-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.pillar h3,
+.pillar h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; }
+.pillar p { font-size: 0.77rem; color: var(--muted); line-height: 1.5; }
+
+/* Full pillar card on contenido.html */
+.pillar-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px 24px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+.pillar-card .pillar-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+.pillar-card h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+.pillar-card p {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+.pillar-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.topic-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #f3f4f6;
+  color: #374151;
+}
+
+/* Pillar icon color variants */
+.pillar-icon--green { background: #dcfce7; }
+.pillar-icon--navy { background: #dbeafe; }
+.pillar-icon--orange { background: #fff7ed; }
+.pillar-icon--purple { background: #f3e8ff; }
+
+@media (max-width: 700px) {
+  .pillars-grid { grid-template-columns: 1fr; }
+}

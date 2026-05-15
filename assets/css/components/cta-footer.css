@@ -1,0 +1,23 @@
+/* Reusable dark CTA footer block (para-quien, como-funciona, contenido) */
+.cta-footer {
+  background: linear-gradient(135deg, #1a6b45, #1e3a5f);
+  padding: 72px 32px;
+  text-align: center;
+}
+.cta-footer h2 {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 12px;
+}
+.cta-footer p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+.cta-footer .fine {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 14px;
+}

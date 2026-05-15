@@ -1,0 +1,35 @@
+/* Minimal modern reset */
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+img,
+svg,
+video { max-width: 100%; height: auto; display: block; }
+
+button,
+input,
+select,
+textarea { font: inherit; color: inherit; }
+
+ul,
+ol { list-style: none; }
+
+a { color: inherit; }
+
+fieldset { border: none; margin: 0; padding: 0; }
+fieldset legend { float: left; width: 100%; padding: 0; }
+fieldset legend + * { clear: both; }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

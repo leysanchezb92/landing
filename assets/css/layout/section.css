@@ -1,0 +1,46 @@
+/* Shared section wrapper + accent tags */
+.section {
+  padding: 72px 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.section-lead {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 40px;
+}
+
+/* Surface variants reused across pages */
+.section--white { background: white; padding: 72px 32px; }
+.section--white > .section-inner,
+.section-inner { max-width: 1000px; margin: 0 auto; }
+
+/* Narrow column for prose-heavy blocks (FAQ, etc.) */
+.section-inner--narrow { max-width: 760px; }
+
+/* Eyebrow tags */
+.section-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.tag-green { background: var(--green-light); color: var(--green2); }
+.tag-navy { background: var(--navy-light); color: var(--navy); }
+.tag-orange { background: var(--orange-light); color: var(--orange); }
+.tag-purple { background: var(--purple-light); color: var(--purple); }
